@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
+import AuthorCard from "../components/author-card";
 
 export default class PostPage extends Component {
   render() {
@@ -7,21 +8,34 @@ export default class PostPage extends Component {
     const { markdownRemark: post } = data;
     const { title, date } = post.frontmatter;
     return (
-      <div>
+      <article className="o-main-layout">
         <Helmet title={`${title}`} />
-        <p>{date}</p>
-        <h1>{title}</h1>
+        POSSSSSTTTTT
+        <header className="c-page-header">
+          <h1 className="c-page-header__title">
+            { title }
+          </h1>
+          <p className="c-page-header__meta">
+            { date }
+          </p>
+        </header>
+
+
         <div
+          className="s-main-content"
           dangerouslySetInnerHTML={{
             __html: post.html
           }}
         />
-      </div>
+        <aside className="o-sidebar">
+          <AuthorCard />
+        </aside>
+      </article>
     )
   }
 }
 
-export const pageQuery = graphql`
+export const postQuery = graphql`
   query BlogPostQuery($slug: String!) {
     markdownRemark(fields: {
       slug: {
@@ -31,7 +45,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date
+        date(formatString: "MMMM DD YYYY")
       }
     }
   }

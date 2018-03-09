@@ -1,20 +1,20 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import PostListing from '../components/PostListing/PostListing'
+import PostListing from '../components/PostListing'
 
-const IndexPage = ({ data }) => (
+const ReadingPage = ({ data }) => (
   <div>
-    <h2>Posts</h2>
+    <h1>Reading</h1>
     {data.allMarkdownRemark.edges.map(({node}) =>
       <PostListing key={node.id} post={node} />
     )}
   </div>
 )
 
-export default IndexPage
+export default ReadingPage
 
 export const query = graphql`
-  query SiteMeta {
+  query ReadingQuery {
     site {
       siteMetadata {
         title
@@ -26,6 +26,7 @@ export const query = graphql`
         node {
           id
           frontmatter {
+            layout
             title
             date(formatString: "MMMM DD YYYY")
           }
