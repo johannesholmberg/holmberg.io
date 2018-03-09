@@ -28,25 +28,25 @@ const createTagPages = (createPage, posts) => {
     }
   })
 
-
   tags.forEach(tagName => {
     const posts = postsByTags[tagName];
 
-    // createPage({
-    //   path: `/tags/${tagName}`,
-    //   component: tagPageTemplate,
-    //   context: {
-    //     posts,
-    //     tagName
-    //   }
-    // })
+    createPage({
+      path: `/tags/${tagName}`,
+      component: tagPageTemplate,
+      context: {
+        posts,
+        tagName
+      }
+    })
   })
 }
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
   if(node.internal.type === 'MarkdownRemark') {
-    let basePath = 'posts';
+
+    let basePath = 'posts/notebook';
 
     if (node.frontmatter.layout === 'page') {
       basePath = 'pages';
@@ -56,22 +56,19 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       basePath = 'posts/work';
     }
 
-    let title = node.frontmatter.title;
-    let date = node.frontmatter.date;
+    let slug = createFilePath({ node, getNode, basePath });
+    let type = node.frontmatter.layout;
 
-
+    if (node.frontmatter.layout === 'post') {
       let nameArr = slug.replace(/\//g, "").split("-");
-      date = nameArr.splice(0, 3).join("-");
-      title = nameArr.join(" ").replace(".md", "");
+      date = nameArr.splice(0, 2).join("/");
+      slug = nameArr.splice(1, 100).join("-");
+      slug = `/${date}/${slug}`;
     }
 
-    //slug = `/hej`;
-
-
-    let slug = createFilePath({ node, getNode, basePath });
-
-    console.log(date, slug);
-
+    if (node.frontmatter.layout === 'case') {
+      slug = `/work${slug}`;
+    }
 
     createNodeField({
       node,
@@ -81,10 +78,15 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 
     createNodeField({
       node,
-      name: "title",
-      value: title
+      name: 'posttype',
+      value: [type]
     });
 
+    // createNodeField({
+    //   node,
+    //   name: "title",
+    //   value: title
+    // });
   }
 }
 

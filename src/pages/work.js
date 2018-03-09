@@ -24,9 +24,18 @@ export const query = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: {
-      fields: [frontmatter___date], order: DESC
-    }) {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          layout: {
+            eq: "case"
+          }
+        }
+      }
+      sort: {
+        fields: [frontmatter___date], order: DESC
+      }
+    ) {
       edges {
         node {
           id

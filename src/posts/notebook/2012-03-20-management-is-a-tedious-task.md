@@ -2,6 +2,7 @@
 layout: post
 date: "2012-03-20"
 title: "Management is a tedious task"
+tags: ["Fun"]
 has_intro: true
 redirect_from:
   - /journal/management-is-a-tedious-task/

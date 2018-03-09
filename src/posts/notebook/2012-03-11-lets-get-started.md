@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: post
 date: "2012-03-11"
 title: "Let’s get started"
 tags: ["Labs", "Another"]

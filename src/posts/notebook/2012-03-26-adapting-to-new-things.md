@@ -2,6 +2,7 @@
 layout: post
 date: "2012-03-26"
 title: "Adapting to new things"
+tags: ["Fun", "One more"]
 has_intro: true
 redirect_from:
   - /journal/adapting-to-new-things/
