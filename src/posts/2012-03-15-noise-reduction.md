@@ -2,6 +2,7 @@
 layout: post
 date: "2012-03-15"
 title: "Noise reduction"
+tags: ["Fun"]
 has_intro: true
 redirect_from:
   - /journal/noise-reduction/

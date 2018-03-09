@@ -1,5 +1,6 @@
 ---
 layout: post
+date: "2013-01-27"
 title: "On the Road"
 has_intro: true
 redirect_from:

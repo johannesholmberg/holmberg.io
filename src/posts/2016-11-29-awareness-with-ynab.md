@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Awareness with YNAB"
-date: "2016-11-29 16:27:33"
+date: "2016-11-29"
 cover: ynab-1
 crosspost_to_medium: true
 has_intro: true

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A Reviving Year"
+date: "2016-01-13"
 has_intro: true
 redirect_from:
   - /writing/a-reviving-year/
