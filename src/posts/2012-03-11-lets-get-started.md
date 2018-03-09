@@ -1,5 +1,6 @@
 ---
 layout: post
+date: "2012-03-11"
 title: "Let’s get started"
 has_intro: true
 redirect_from:
