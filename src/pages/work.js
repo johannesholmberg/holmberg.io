@@ -33,7 +33,7 @@ export const query = graphql`
         }
       }
       sort: {
-        fields: [frontmatter___date], order: DESC
+        fields: [frontmatter___date], order: ASC
       }
     ) {
       edges {

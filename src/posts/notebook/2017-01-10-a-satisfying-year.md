@@ -21,13 +21,10 @@ to audio books for the first time ever. I figured that I can then “read” eve
 
 ## Highlights of 2016
 - I’ve kept attending the Book Club I joined back in 2015.
-- I attended the [Daily UI project] for a month.
-- I read [35 books over the year], more than I’ve ever read before.
-- Evolved my personal task management system by using OmniFocus and principles from _[Getting Things Done]_.
+- I attended the [Daily UI project](/labs/dailyui/) for a month.
+- I read [35 books over the year](/reading/2016/), more than I’ve ever read before.
+- Evolved my personal task management system by using OmniFocus and principles from _Getting Things Done_.
 - Exchanged my Jawbone activity band for an Apple Watch.
-- Attended the [Smashing Conference] in Barcelona.
+- Attended the Smashing Conference in Barcelona.
 
-[Daily UI project]: {{ site.url }}/labs/dailyui/
-[35 books over the year]: {{ site.url }}/reading/2016/
-[Getting Things Done]: {{ site.url }}{% post_url 2016-12-24-getting-things-done %}
-[Smashing Conference]: {{ site.url }}{% post_url 2016-10-30-takeaways-from-smashingconf %}
+

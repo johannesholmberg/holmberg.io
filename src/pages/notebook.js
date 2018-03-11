@@ -1,13 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import PostListing from '../components/PostListing'
+import ArticleItem from '../components/article-item'
 
 const NotebookPage = ({ data }) => (
   <div>
-    <h1>Notebook</h1>
-    {data.allMarkdownRemark.edges.map(({node}) =>
-      <PostListing key={node.id} post={node} />
-    )}
+    <h1 className="page-title">Notebook</h1>
+
+    <div className="c-article-list">
+      <div className="c-article-list__section">
+        <ul className="c-article-list__holder">
+          {data.allMarkdownRemark.edges.map(({node}) =>
+            <ArticleItem key={node.id} post={node} />
+          )}
+        </ul>
+      </div>
+    </div>
+
+
   </div>
 )
 

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Takeaways from Smashing Conference Barcelona"
 date: "2016-10-30"
 has_intro: true
@@ -178,12 +179,6 @@ I think the conference struck a perfect balance of design and technology. It was
 
 - “Kudos to Apple for the two middle fingers they always give to the web.”
 - Website obesity is a universal problem for online journalism.
-
-{% assign filename = "smashingconf4" %}
-{% assign alt = "People walking in Barcelona" %}
-{% assign attributes = "figure--margins" %}
-{% assign caption = "Walking with friends at the typography walk. Photo credits <a href='https://www.instagram.com/itzrachelle/'>itzrachelle</a>." %}
-{% include responsive-image.html %}
 
 [Smashingconf]: https://smashingconf.com/barcelona-2016/
 [12 principles of animation]: http://the12principles.tumblr.com/

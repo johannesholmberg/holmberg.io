@@ -3,7 +3,6 @@ layout: case
 title: "Cultural Care"
 cover: culturalcare
 description: "A responsive system for twenty global websites."
-permalink: work/culturalcare/
 role: Designer, Front-end Developer
 website: http://culturalcare.se
 meta: November, 2011–April, 2012

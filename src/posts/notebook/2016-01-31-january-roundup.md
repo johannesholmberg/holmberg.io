@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "January Roundup"
 date: "2016-01-31"
 has_intro: true

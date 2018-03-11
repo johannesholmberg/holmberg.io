@@ -1,37 +1,43 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import NavLink from 'gatsby-link'
+import Icon from '../icon'
 
-const Navigation = () => (
+const Navigation = ({ data }) => (
   <nav className="c-nav-primary">
-    <Link to="/" className="c-nav-primary__brand">
-      <svg viewBox="0 0 96 96" className="icon" width="24" height="24">
-
-      </svg>
-    </Link>
+    <NavLink to="/" className="c-nav-primary__brand">
+      <Icon id="logo" />
+    </NavLink>
     <ul className="c-nav-primary__list">
 
       <li className="c-nav-primary__item">
-        <Link to="/" className="c-nav-primary__link ">
+        <NavLink
+          to="/"
+          exact="true"
+          className="c-nav-primary__link"
+          activeClassName="c-nav-primary__link--active"
+        >
           About
-        </Link>
+        </NavLink>
       </li>
 
       <li className="c-nav-primary__item">
-        <Link to="/notebook" className="c-nav-primary__link ">
+        <NavLink
+          to="/notebook"
+          className="c-nav-primary__link"
+          activeClassName="c-nav-primary__link--active"
+        >
           Notebook
-        </Link>
+        </NavLink>
       </li>
 
       <li className="c-nav-primary__item">
-        <Link to="/work" className="c-nav-primary__link ">
+        <NavLink
+          to="/work"
+          className="c-nav-primary__link "
+          activeClassName="c-nav-primary__link--active"
+        >
           Work
-        </Link>
-      </li>
-
-      <li className="c-nav-primary__item">
-        <Link to="/reading" className="c-nav-primary__link ">
-          Reading
-        </Link>
+        </NavLink>
       </li>
 
     </ul>

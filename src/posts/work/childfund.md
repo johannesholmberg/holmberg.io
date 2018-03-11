@@ -3,7 +3,6 @@ layout: case
 title: "ChildFund"
 cover: childfund
 description: "A donation portal with performance in mind."
-permalink: work/childfund/
 role: Developer
 website: https://www.childfund.org.nz/donate
 meta: March–May, 2016
