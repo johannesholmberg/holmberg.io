@@ -2,8 +2,8 @@ const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 const createTagPages = (createPage, posts) => {
-  const tagPageTemplate = path.resolve('./src/layouts/tag-page.js');
-  const allTagsTemplate = path.resolve('./src/layouts/all-tags.js');
+  const tagPageTemplate = path.resolve('./src/pages/tags.js');
+  const allTagsTemplate = path.resolve('./src/templates/tag.js');
 
   const postsByTags = {}
 
@@ -57,10 +57,11 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     }
 
     let slug = createFilePath({ node, getNode, basePath });
-    let type = node.frontmatter.layout;
 
     if (node.frontmatter.layout === 'post') {
       let nameArr = slug.replace(/\//g, "").split("-");
+      console.log(nameArr);
+
       date = nameArr.splice(0, 2).join("/");
       slug = nameArr.splice(1, 100).join("-");
 
@@ -83,12 +84,6 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       value: slug
     });
 
-    createNodeField({
-      node,
-      name: 'posttype',
-      value: [type]
-    });
-
   }
 }
 
@@ -107,7 +102,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 layout
                 title
                 date
-                tags
+                # tags
               }
             }
           }
@@ -116,6 +111,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     `).then(result => {
 
       if (result.errors) {
+        console.log(result.errors);
+
         return Promise.reject(result.errors)
       }
 

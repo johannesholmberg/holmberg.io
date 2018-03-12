@@ -2,18 +2,25 @@ module.exports = {
   siteMetadata: {
     title: 'Johannes Holmberg',
     description: '',
+    siteUrl: `https://holmberg.io`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        name: 'img',
-        path: `${__dirname}/src/assets/images`,
         plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+            }
+          },
           {
             resolve: `gatsby-remark-embed-youtube`,
             options: {

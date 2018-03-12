@@ -6,6 +6,32 @@ date: "2017-06-28"
 
 ![Bob Dylan](dylan.jpg)
 
+```javascript
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
+
+```html
+<div className="c-article-list">
+  <div className="c-article-list__section">
+    <ul className="c-article-list__holder">
+      {data.allMarkdownRemark.edges.map(({node}) =>
+        <ArticleItem key={node.id} post={node} />
+      )}
+    </ul>
+  </div>
+</div>
+```
+
 I’ve been trying lately to gain some small wins in my life. I’ve got that problem with having too many things I want to achieve, and so more often than not end up doing nothing. I tend to think about how great it will be to write more for instance, or to do more workout. But I don’t have a plan for how to get this thing going. I don’t know how much would be enough.
 
 **Get started.** In tending to only fantasizing about what the outcome would look like I avoid doing something to get to it. That’s why I’ve instead started thinking in terms of "just enough". “What can I do about this consistently that is just enough to keep me going?” Instead of imagining myself writing a book (which is nice to daydream about) I can put down a few words right now.

@@ -12,7 +12,7 @@ const Navigation = ({ data }) => (
       <li className="c-nav-primary__item">
         <NavLink
           to="/"
-          exact="true"
+          exact={true}
           className="c-nav-primary__link"
           activeClassName="c-nav-primary__link--active"
         >
@@ -23,7 +23,7 @@ const Navigation = ({ data }) => (
       <li className="c-nav-primary__item">
         <NavLink
           to="/about"
-          exact="true"
+          exact={true}
           className="c-nav-primary__link"
           activeClassName="c-nav-primary__link--active"
         >
