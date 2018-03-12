@@ -1,17 +1,8 @@
 ---
 layout: post
-title: "The Camera"
 date: "2015-09-17"
-has_intro: true
-redirect_from:
-  - /article/the-camera/
-  - /notebook/the-camera/
+title: "The Camera"
 ---
-
-{% assign filename = "rolleiflex" %}
-{% assign ext = "jpg" %}
-{% assign alt = "A Rolleiflex camera" %}
-{% include responsive-image.html %}
 
 _This post was first published for a course project over at [Skillshare][skillshare]. The assignment was to write a 500-word essay about one of my objects._
 

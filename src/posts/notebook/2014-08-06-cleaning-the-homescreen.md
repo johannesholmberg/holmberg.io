@@ -1,20 +1,10 @@
 ---
 layout: post
-title: "Cleaning the homescreen"
 date: "2014-08-06"
-has_intro: true
-redirect_from:
-  - /journal/cleaning-the-homescreen/
-  - /article/cleaning-the-homescreen/
-  - /notebook/cleaning-the-homescreen/
+title: "Cleaning the homescreen"
 ---
 
 A couple of weeks ago I did a little decluttering of my iPhone’s homescreen and I’m pretty happy with the outcome.
-
-{% assign filename = "homescreen" %}
-{% assign alt = "iPhone" %}
-{% assign attributes = "figure--margins figure--portrait" %}
-{% include responsive-image.html %}
 
 My idea was to single out all the apps I use on a daily basis and place them directly on the homescreen; the rest is dropped in the ‘Utilities’ folder where they’re accessed by using the splendid search functionality in iOS 7. The result is this.
 

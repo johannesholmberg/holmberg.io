@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/Header'
+import Header from '../components/header'
 import Footer from '../components/footer'
 import Icons from '../components/icons'
 import Icon from '../components/icon'
@@ -11,13 +11,13 @@ import '../assets/styles/index.css'
 
 const TemplateWrapper = ({ children, data }) => (
   <div className="site-wrap">
-    <Helmet
+    {/* <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
+    /> */}
     <div style={
       {
         height: '0',

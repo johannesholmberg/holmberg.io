@@ -1,17 +1,8 @@
 ---
 layout: post
-title: "Getting UP"
 date: "2015-04-07"
-has_intro: true
-redirect_from:
-  - /journal/getting-up/
-  - /article/getting-up/
-  - /notebook/getting-up/
+title: "Getting UP"
 ---
-
-{% assign filename = "up-bracelet" %}
-{% assign alt = "UP activity tracker from Jawbone" %}
-{% include responsive-image.html %}
 
 Last month I got this activity tracker [‘UP’ from Jawbone]. It’s this pretty geeky thing you strap around your wrist and it’ll count the steps you make throughout the day.
 
@@ -30,11 +21,6 @@ I still ended up scrolling away at the blinding light of that screen, hunting do
 **I hate this.**
 
 The greatest benefit of the UP bracelet is that it features no screen. You can activate reminders on it and it will feed back a gentle vibration. So, instead of the traditional alarm sound in the morning, I now wake up when I feel this slight vibration on my wrist. It’s a really pleasant feeling.
-
-{% assign filename = "up-bracelet-2" %}
-{% assign alt = "UP activity tracker from Jawbone" %}
-{% assign caption = "No more quirky alarm clocks in the morning thanks to this guy." %}
-{% include responsive-image.html %}
 
 Thanks to this, my iPhone has found its way off the nightstand and out of the bedroom. It has to kindly wait for me in the office until I start my working day.
 

@@ -1,9 +1,12 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 import ArticleItem from '../components/article-item'
 
 const NotebookPage = ({ data }) => (
   <div>
+    <Helmet title={`Notebook – Holmberg.io`} />
+
     <h1 className="page-title">Notebook</h1>
 
     <div className="c-article-list">
@@ -40,6 +43,7 @@ export const query = graphql`
           frontmatter {
             layout
             title
+            category
             date(formatString: "MMMM DD YYYY")
           }
           html

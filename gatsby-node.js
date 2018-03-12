@@ -63,7 +63,14 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       let nameArr = slug.replace(/\//g, "").split("-");
       date = nameArr.splice(0, 2).join("/");
       slug = nameArr.splice(1, 100).join("-");
-      slug = `/${date}/${slug}`;
+
+      let cat = '';
+      if(node.frontmatter.category) {
+        cat = `${node.frontmatter.category}/`;
+      } else {
+        cat = ``;
+      }
+      slug = `/notebook/${cat}${date}/${slug}`;
     }
 
     if (node.frontmatter.layout === 'case') {
@@ -82,11 +89,6 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       value: [type]
     });
 
-    // createNodeField({
-    //   node,
-    //   name: "title",
-    //   value: title
-    // });
   }
 }
 
@@ -122,32 +124,20 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       createTagPages(createPage, posts);
 
       posts.forEach(({ node }) => {
-        if (node.frontmatter.layout === 'case') {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve('./src/templates/case.js'),
-            context: {
-              slug: node.fields.slug,
-            },
-          })
-        } else if (node.frontmatter.layout === 'page') {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve('./src/templates/page.js'),
-            context: {
-              slug: node.fields.slug,
-            },
-          })
-        } else {
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve('./src/templates/post.js'),
-            context: {
-              slug: node.fields.slug,
-            },
-          })
+        let templatePath = './src/templates/post.js';
+        if (node.frontmatter.layout === 'page') {
+          templatePath = './src/templates/page.js';
+        } else if (node.frontmatter.layout === 'case') {
+          templatePath = './src/templates/case.js';
         }
 
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(templatePath),
+          context: {
+            slug: node.fields.slug,
+          },
+        })
 
       })
       resolve();

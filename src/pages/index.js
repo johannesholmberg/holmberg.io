@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet';
 import Icon from '../components/icon'
 
 const IndexPage = ({ data }) => (
   <section className="c-home-section">
+    <Helmet title={`Home – Holmberg.io`} />
     <div className="c-home-section__profile">
       <img
         class="c-home-section__image"

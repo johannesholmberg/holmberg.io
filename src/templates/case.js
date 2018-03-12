@@ -10,7 +10,7 @@ export default class CasePage extends Component {
     const {
       title,
       date,
-      cover,
+      image,
       description,
       role,
       website,
@@ -26,16 +26,30 @@ export default class CasePage extends Component {
       <article className="o-main-layout">
         <Helmet title={`${title}`} />
 
-        <PageHeader title={title} description={meta} />
+        <PageHeader title={title} description={description} />
 
-        <div
-          className="s-main-content s-main-content--intro"
-          dangerouslySetInnerHTML={{
+        <div className="s-main-content s-main-content--intro">
+          <figure>
+            <img
+              src={`https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image}.jpg`}
+              srcSet={`
+                https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_400/v1520835525/work/${image}.jpg 400w,
+                https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_800/v1520835525/work/${image}.jpg 800w,
+                https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image}.jpg 1400w
+              `}
+              alt={title}
+            />
+          </figure>
+
+          <div dangerouslySetInnerHTML={{
             __html: post.html
           }} />
+        </div>
 
         <aside className="o-sidebar">
-          <AuthorCard />
+          <p>
+            &nbsp;
+          </p>
           <aside>
             <ul className="o-sidebar__meta">
               <li className="o-sidebar__meta-item">
@@ -77,7 +91,7 @@ export const caseQuery = graphql`
       frontmatter {
         title
         date
-        cover
+        image
         description
         role
         website

@@ -1,17 +1,8 @@
 ---
 layout: post
-title: "An Evening with Dylan"
 date: "2015-07-24"
-cover: "dylan"
-has_intro: true
-redirect_from:
-  - /journal/an-evening-with-dylan/
-  - /notebook/an-evening-with-dylan/
+title: "An Evening with Dylan"
 ---
-
-{% assign filename = page.cover %}
-{% assign alt = "Bob Dylan" %}
-{% include responsive-image.html %}
 
 So it happened. I got to see Bob Dylan live. Hadn't thought much about it actually. Just occasionally, the thought would pop up in my head "Would have been cool to see Dylan live one time, before it would be over I mean", then I would google around for his upcoming concerts and start making some plans that would eventually peter out. It happened a couple of times.
 

@@ -2,15 +2,7 @@
 layout: post
 title: "Takeaways from Smashing Conference Barcelona"
 date: "2016-10-30"
-has_intro: true
-crosspost_to_medium: true
-redirect_from:
-  - /notebook/takeaways-from-smashingconf/
 ---
-
-{% assign filename = "smashingconf" %}
-{% assign alt = "Conference" %}
-{% include responsive-image.html %}
 
 I finally managed to find some time and attend another conference within my field of work. I chose to go to Barcelona and attend the [Smashingconf] this week.
 
@@ -108,11 +100,6 @@ I think the conference struck a perfect balance of design and technology. It was
 - The fault tolerance of HTML is what allows it to grow.
 - JavaScript is the most fragile part of the stack.
 - Give yourself technical credit by creating a robust foundation and enhance from there.
-
-{% assign filename = "smashingconf3" %}
-{% assign alt = "Conference" %}
-{% assign caption = "The amazing venue at Palau de la Música Catalana." %}
-{% include responsive-image.html %}
 
 
 ## Day 2, October 26th 2016

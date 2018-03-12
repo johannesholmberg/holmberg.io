@@ -1,15 +1,10 @@
 ---
 layout: post
-title: "Updates on the Site"
 date: "2015-11-24"
-has_intro: true
-redirect_from:
-  - /writing/updates-on-the-site/
-  - /notebook/updates-on-the-site/
+title: "Updates on the Site"
 ---
 
 The time has come. You know that time when you have too many ideas boiling around in your head and you just need to get them out before you go insane. You know what I’m talking about, right?
-{: .intro}
 
 Anyway, those ideas had to do with different parts of this site and I couldn’t put up with it any longer. I wanted to try out some new things and fix some others. That’s why I sat down doing some coding this weekend.
 

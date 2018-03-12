@@ -10,7 +10,7 @@ export default class PagePage extends Component {
     const { title, date } = post.frontmatter;
     return (
       <article className="o-main-layout">
-        <Helmet title={`${title}`} />
+        <Helmet title={`${title} – Holmberg.io`} />
 
         <PageHeader title={title} description={date} />
 

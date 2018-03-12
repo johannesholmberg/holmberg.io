@@ -2,8 +2,6 @@
 layout: post
 title: "Timing Tasks"
 date: "2016-12-06"
-has_intro: true
-crosspost_to_medium: true
 ---
 
 I started a new habit a few weeks ago. After reading Deep Work I gained a lot of new insights and one of them is that it’s terribly easy to stray away from my current task at hand. Lots of times I find myself starting out with something I need to do, and later, say 30 minutes or so, I find myself doing another thing completely. And the worst is that sometimes I’m not even remembering what I should have done in the first place.

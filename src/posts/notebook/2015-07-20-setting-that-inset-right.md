@@ -3,11 +3,6 @@ layout: post
 title: "Getting that inset of the box-shadow right"
 date: "2015-07-20"
 has_intro: true
-redirect_from:
-  - /journal/setting-the-inset/
-  - /article/setting-the-inset/
-  - /article/setting-that-inset-right/
-  - /notebook/setting-that-inset-right/
 ---
 
 A little CSS problem that’s been bugging me for some time is the inability to set an inset box shadow, for one side only.

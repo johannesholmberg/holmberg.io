@@ -1,18 +1,17 @@
 ---
 layout: case
+date: "2012-12"
 title: "LCC Compliance Application"
-cover: compliance
-description: "“A more inviting, user-friendly system to handle.”"
-role: Designer, Front-end Developer
-website:
-meta: August–December, 2012
-output: 'Front-end code, Content structure, Responsive platform'
-techniques: 'HTML, CSS, JavaScript, jQuery'
-client: 'Cultural Care'
+image: "compliance"
+description: "“A more inviting, user-friendly system to handle”"
+role: "Designer, Front-end Developer"
+meta: "August–December, 2012"
+output: "Front-end code, Content structure, Responsive platform"
+techniques: "HTML, CSS, JavaScript, jQuery"
+client: "Cultural Care"
 ---
 
 **In the world** of Cultural Care there are people referred to as LCC’s—Local Childcare Coordinators. These people work from all over the United States to help supporting the au pairs in their daily chores.
-{: .intro}
 
 The system they were using to keep an overview of the status of the au pairs was not built for access on smartphones. Since more and more LCC’s did their work while they were out visiting au pairs–and not in the office–there was time for a revamp.
 

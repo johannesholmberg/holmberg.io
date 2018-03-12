@@ -15,17 +15,11 @@ And so much is at stake depending on what gender the noun has. The verbs changes
 Another thing that’s very different from the languages I know is the bending (conjugating) of the verbs depending on who or what they’re referring to. And German also has a formal variant of their language which adds to the complexity. A short example:
 
 - _ich **gehe**_ — I **go**
-
 - _du **gehst**_ — you **go** (informal, singular)
-
 - _er/sie/es **geht**_ — he/she/it **goes**
-
 - _wir **gehen**_ — we **go**
-
 - _ihr **geht**_ — you **go** (informal, plural)
-
 - _sie **gehen**_ — they **go**
-
 - _Sie **gehen**_ — you (formal, singular and plural) **go**
 
 See. How complicated is that? The verb _gehen_ - to go - changes all the time depending on who is doing it (and there can be so many doing it...) All this variaton is all just in the present tense, we haven’t even started with how it is for past and future. Since this doesn’t happen in either Swedish or English I’m a bit overwhelmed at the moment. I have to take some time and let it sink in.

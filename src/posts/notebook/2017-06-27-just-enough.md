@@ -2,7 +2,6 @@
 layout: post
 title: "Just Enough"
 date: "2017-06-27"
-has_intro: true
 ---
 
 I’ve been trying lately to gain some small wins in my life. I’ve got that problem with having too many things I want to achieve, and so more often than not end up doing nothing. I tend to think about how great it will be to write more for instance, or to do more workout. But I don’t have a plan for how to get this thing going. I don’t know how much would be enough.

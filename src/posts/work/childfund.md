@@ -1,14 +1,15 @@
 ---
 layout: case
+date: "2016-05"
 title: "ChildFund"
-cover: childfund
-description: "A donation portal with performance in mind."
-role: Developer
-website: https://www.childfund.org.nz/donate
-meta: March–May, 2016
-output: 'WordPress integration, Front-end development, Responsive platform'
-techniques: 'HTML, CSS, PHP, WordPress, JavaScript, jQuery, Gulp, Sass'
-client: 'ChildFund New Zealand, in collaboration with <a href="http://osynlig.nz/">Osynlig NZ</a>'
+image: "childfund"
+description: "A donation portal with performance in mind"
+role: "Developer"
+website: "https://www.childfund.org.nz/donate"
+meta: "March–May, 2016"
+output: "WordPress integration, Front-end development, Responsive platform"
+techniques: "HTML, CSS, PHP, WordPress, JavaScript, jQuery, Gulp, Sass"
+client: "ChildFund New Zealand, in collaboration with Osynlig NZ"
 ---
 
 This spring I got to work on a very interesting project. It was for an organization in New Zealand and was to become a donation portal for children in need. The requirement was to build a platform on WordPress.

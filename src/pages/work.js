@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import CaseListing from '../components/CaseListing'
+import Helmet from 'react-helmet';
+import CaseListing from '../components/case-listing'
 
 const WorkPage = ({ data }) => (
   <div>
+    <Helmet title={`Work – Holmberg.io`} />
     <h1 className="page-title">Work</h1>
     <div className="c-case-list">
       {data.allMarkdownRemark.edges.map(({node}) =>
@@ -17,13 +19,7 @@ const WorkPage = ({ data }) => (
 export default WorkPage
 
 export const query = graphql`
-  query WorkQuery {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
+  query workQuery {
     allMarkdownRemark(
       filter: {
         frontmatter: {
@@ -33,7 +29,7 @@ export const query = graphql`
         }
       }
       sort: {
-        fields: [frontmatter___date], order: ASC
+        fields: [frontmatter___date], order: DESC
       }
     ) {
       edges {
@@ -43,6 +39,7 @@ export const query = graphql`
             layout
             title
             date(formatString: "MMMM DD YYYY")
+            image
           }
           html
           excerpt

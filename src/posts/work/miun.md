@@ -1,19 +1,19 @@
 ---
 layout: case
+date: "2014-09"
 title: "Mid Sweden University"
-cover: miun
-description: "The responsive university."
-role: Front-end Developer
-website: https://miun.se/
-meta: January–September, 2014
-output: 'Wireframes, Front-end code, Responsive platform'
-techniques: 'HTML, CSS, Bootstrap, JavaScript, jQuery, Sass'
-client: 'Mid Sweden University, in collaboration with <a href="http://osynlig.se/">Osynlig</a> and Knowit'
+image: "miun"
+description: "The responsive university"
+role: "Front-end Developer"
+website: "https://miun.se/"
+meta: "January–September, 2014"
+techniques: "HTML, CSS, Bootstrap, JavaScript, jQuery, Sass"
+client: "Mid Sweden University, in collaboration with Osynlig and Knowit"
 ---
 
 The new responsive web platform for The Mid Sweden University was a project that started out with a lot of research. We put up some initial workshops with people from different departments of the university, so that we could structure a solid content model.
 
-It was a great experience to get all this information first hand from people who knew the organization inside out. It was the first project I've been involved in which conducted this type of research.
+It was a great experience to get all this information first hand from people who knew the organization inside out. It was the first project I"ve been involved in which conducted this type of research.
 
 After getting the content model roughly sorted out, we set out creating some initial mockups which we iterated through with the client as well as the integration team from [KnowIT].
 

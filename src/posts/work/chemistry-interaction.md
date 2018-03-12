@@ -1,17 +1,14 @@
 ---
 layout: case
-date: "2016-06-05"
+date: "2016-06"
 title: "Chemistry Interaction"
-cover: chemistry-interaction
-description: "A responsive makeover with a customized CMS."
-role: Developer
-website: http://chemistryinteraction.co.nz
-meta: March–June, 2016
-client: 'Chemistry Interaction, in collaboration with Osynlig NZ'
-techniques: [
-  'HTML', 'CSS', 'PHP', 'WordPress', 'JavaScript',
-  'jQuery', 'Gulp', 'Sass'
-]
+image: "chemistry-interaction"
+description: "A responsive makeover with a customized CMS"
+role: "Developer"
+website: "http://chemistryinteraction.co.nz"
+meta: "March–June, 2016"
+client: "Chemistry Interaction, in collaboration with Osynlig NZ"
+techniques: "HTML, CSS', 'PHP', 'WordPress', 'JavaScript', 'jQuery', 'Gulp', 'Sass"
 ---
 
 I was hired to develop the front-end and WordPress integration for a new responsive, digital home to a PR agency in New Zealand.

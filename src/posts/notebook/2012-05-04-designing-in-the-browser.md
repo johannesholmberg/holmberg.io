@@ -43,8 +43,10 @@ When it's required to do some changes, it's so easily done in code and the chang
 
 The most interesting aspect with designing in the browser is that when I do, I can play around with stuff in realtime and find exciting new solutions I'd never discover otherwise. This presentation from Bret Victor shows exactly this.
 
-{% assign video_url = "//www.youtube.com/embed/PUv66718DII" %}
-{% include responsive-video.html %}
+`vimeo: https://vimeo.com/5299404`
+`youtube: //www.youtube.com/embed/PUv66718DII`
+
+
 
 ## To the future
 

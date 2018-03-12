@@ -1,11 +1,7 @@
 ---
 layout: post
-title: "A Month of German"
 date: "2015-10-01"
-has_intro: true
-redirect_from:
-  - /writing/a-month-of-german/
-  - /notebook/a-month-of-german/
+title: "A Month of German"
 ---
 
 I would like to try something new. I have a problem that there are lots of things I want to learn but I find myself to be a little bit all over the place at once. I try a bit of this and a bit of that but nothing ever amounts to anything. I even find myself at times doing nothing because I have simply too many options. Not good.
@@ -14,15 +10,8 @@ So what I would like to try now is to focus on one subject per month. I pick a s
 
 
 ## Getting the basics
-{: #section1 .section}
 
 My German skills has gone both up and down but lately I feel it has degenerated too much. So I want to take a step in improving it. When I started learning German I used [Duolingo] for getting the basics down. It’s a beautiful app for iOS and it’s a delight to use their gamified approach for language learning.
-
-{% assign filename = "duolingo1" %}
-{% assign alt = "Duolingo" %}
-{% assign ext = "png" %}
-{% assign margins = true %}
-{% include responsive-image.html %}
 
 It was a perfect start for getting familiarized with the sound of the language. I was quite amazed how quick it went to start grasping the fundamental pieces. You get a coach in form of an owl and he almost feels like a regular friend after some time. I was playing this for a couple of months (yes, I see it more as a game than anything) and it felt so great in the end, when I had conquered all the levels and that magnificent gold owl was mine. It’s a bit nerdy I know but it worked well for me.
 
@@ -30,7 +19,6 @@ Duolingo was the perfect tool for getting started. It didn’t cost a dime and t
 
 
 ## Next steps
-{: #section2 .section}
 
 Next I want to be able to have real conversations in German. I’ve come up with a plan of action to make it happen.
 
