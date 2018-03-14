@@ -1,0 +1,27 @@
+/*
+ * Link style
+ */
+%link {
+	text-transform: uppercase;
+	font-size: .875em;
+	border-bottom: 2px solid $text;
+	padding: 0 .1em .1em;
+	font-family: $fontAlt;
+	font-weight: 700;
+	line-height: 1;
+}
+
+
+/*
+ * Clearfix: contain floats
+ */
+
+%clearfix:before,
+%clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+%clearfix:after {
+	clear: both;
+}

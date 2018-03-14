@@ -1,0 +1,21 @@
+nav ul,
+nav ol {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  list-style: none;
+}
+
+audio, canvas, img, svg, video {
+  vertical-align: middle;
+}
+
+img, video, object, svg, iframe {
+  max-width: 100%;
+  border: none;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+}

@@ -3,61 +3,59 @@ import NavLink from 'gatsby-link'
 import Icon from './icon'
 
 const Navigation = ({ data }) => (
-  <nav className="c-nav-primary">
-    <NavLink to="/" className="c-nav-primary__brand">
-      <Icon id="logo" />
-    </NavLink>
-    <ul className="c-nav-primary__list">
+  <nav className="nav-global">
 
-      <li className="c-nav-primary__item">
+    <ul className="nav-global__list">
+
+      <li className="nav-global__item">
         <NavLink
           to="/"
           exact={true}
-          className="c-nav-primary__link"
-          activeClassName="c-nav-primary__link--active"
+          className="nav-global__link"
+          activeClassName="nav-global__link--active"
         >
-          Home
+          home
         </NavLink>
       </li>
 
-      <li className="c-nav-primary__item">
+      <li className="nav-global__item">
         <NavLink
           to="/about"
           exact={true}
-          className="c-nav-primary__link"
-          activeClassName="c-nav-primary__link--active"
+          className="nav-global__link"
+          activeClassName="nav-global__link--active"
         >
-          About
+          about
         </NavLink>
       </li>
 
-      <li className="c-nav-primary__item">
+      <li className="nav-global__item">
         <NavLink
           to="/notebook"
-          className="c-nav-primary__link"
-          activeClassName="c-nav-primary__link--active"
+          className="nav-global__link"
+          activeClassName="nav-global__link--active"
         >
-          Notebook
+          notebook
         </NavLink>
       </li>
 
-      <li className="c-nav-primary__item">
+      <li className="nav-global__item">
         <NavLink
           to="/work"
-          className="c-nav-primary__link "
-          activeClassName="c-nav-primary__link--active"
+          className="nav-global__link "
+          activeClassName="nav-global__link--active"
         >
-          Work
+          work
         </NavLink>
       </li>
 
-      <li className="c-nav-primary__item">
+      <li className="nav-global__item">
         <NavLink
           to="/contact"
-          className="c-nav-primary__link "
-          activeClassName="c-nav-primary__link--active"
+          className="nav-global__link "
+          activeClassName="nav-global__link--active"
         >
-          Contact
+          contact
         </NavLink>
       </li>
 

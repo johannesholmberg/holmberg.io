@@ -3,7 +3,17 @@ import Link from 'gatsby-link'
 import Navigation from './navigation'
 
 const Header = () => (
-  <header className="c-site-header">
+  <header className="header-global">
+
+    <h1 className="header-global__title">
+      <span>johannes</span>
+      <span>holmberg</span>
+    </h1>
+
+    <p className="header-global__description">
+      frontend developer, ux designer, minimalist, bookworm
+    </p>
+
     <Navigation />
   </header>
 )

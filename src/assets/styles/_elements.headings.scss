@@ -1,0 +1,34 @@
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  font-weight: 600;
+  font-family: $fontTitle;
+
+  & + p {
+    margin-top: 0;
+  }
+}
+
+h1 {
+  margin: 1em 0 .2em;
+  line-height: 1;
+  letter-spacing: -.02em;
+  font-size: 5.625em;
+
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.1;
+  letter-spacing: -.01em;
+  margin: 2em 0 .5em;
+}
+
+h3 {
+  font-size: 1.6em;
+  margin: 1em 0 .5em;
+  padding-top: 1em;
+  letter-spacing: -.01em;
+}

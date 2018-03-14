@@ -6,11 +6,11 @@ const PageHeader = ({
   description
 }) => {
   return (
-    <header className="c-page-header">
-      <h1 className="c-page-header__title">
+    <header className="page-header">
+      <h1 className="page-header__title">
         { title }
       </h1>
-      <p className="c-page-header__meta">
+      <p className="page-header__subtitle">
         { description }
       </p>
     </header>

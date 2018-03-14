@@ -1,0 +1,16 @@
+.svg-icon {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  height: 1em;
+  width: 1em;
+  margin-right: .1em;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  position: absolute;
+  bottom: -0.125em;
+}

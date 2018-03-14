@@ -1,0 +1,24 @@
+.article-list {
+  padding: 0;
+}
+
+.article-item {
+  list-style: none;
+  margin: 1.5em 0;
+}
+
+.article-item__link {
+  display: inline-block;
+  margin: 0 0 .3em;
+}
+
+.article-item__title {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+.article-item__date {
+  font-size: .9em;
+  margin: 0;
+}

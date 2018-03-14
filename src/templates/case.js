@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
+import Img from "gatsby-image";
 import AuthorCard from "../components/author-card";
 import PageHeader from "../components/page-header";
 
@@ -20,15 +21,11 @@ export default class CasePage extends Component {
       client,
     } = post.frontmatter;
 
-
     return (
-
-      <article className="o-main-layout">
+      <article>
         <Helmet title={`${title}`} />
-
         <PageHeader title={title} description={description} />
 
-        <div className="s-main-content s-main-content--intro">
           <figure>
             <img
               src={`https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image}.jpg`}
@@ -41,37 +38,34 @@ export default class CasePage extends Component {
             />
           </figure>
 
-          <div dangerouslySetInnerHTML={{
+          <div className="main-content"
+            dangerouslySetInnerHTML={{
             __html: post.html
           }} />
-        </div>
 
-        <aside className="o-sidebar">
-          <p>
-            &nbsp;
-          </p>
-          <aside>
-            <ul className="o-sidebar__meta">
-              <li className="o-sidebar__meta-item">
-                <strong>Production:</strong> { meta }
-                </li>
-              <li className="o-sidebar__meta-item">
-                <strong>Role:</strong> { role }
+
+        <aside className="sidebar">
+
+          <ul className="sidebar__meta">
+            <li className="sidebar__meta-item">
+              <strong>Production:</strong> { meta }
               </li>
-              <li className="o-sidebar__meta-item">
-                <strong>Techniques:</strong> { techniques }
-              </li>
-              <li className="o-sidebar__meta-item">
-                <strong>Client:</strong> { client }
-              </li>
-              <li className="o-sidebar__meta-item">
-                <strong>Website: </strong>
-                <a href={ website }>
-                  { website }
-                </a>
-              </li>
-            </ul>
-          </aside>
+            <li className="sidebar__meta-item">
+              <strong>Role:</strong> { role }
+            </li>
+            <li className="sidebar__meta-item">
+              <strong>Techniques:</strong> { techniques }
+            </li>
+            <li className="sidebar__meta-item">
+              <strong>Client:</strong> { client }
+            </li>
+            <li className="sidebar__meta-item">
+              <strong>Website: </strong>
+              <a href={ website }>
+                { website }
+              </a>
+            </li>
+          </ul>
 
         </aside>
 

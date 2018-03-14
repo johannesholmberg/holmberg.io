@@ -1,0 +1,30 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 22em 1fr;
+  max-width: 84em;
+  z-index: 2;
+  margin: 5em auto 0;
+  //padding: 5em 0;
+  position: relative;
+
+  > h1 {
+    margin-bottom: 0em;
+  }
+}
+
+.main-layout {
+
+}
+
+.main-content {
+
+  > * {
+    max-width: 50rem;
+    padding: 0 2em 0 0;
+  }
+
+  .gatsby-resp-image-wrapper {
+    //transform: translateX(3em);
+  }
+
+}

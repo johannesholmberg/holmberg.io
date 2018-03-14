@@ -1,8 +1,7 @@
 ---
 layout: post
+date: "2015-05-18"
 title: "Turning off"
-date: "2013-05-18"
-has_intro: true
 ---
 
 As I ventured out to [see the world a couple of years ago], I thought about that as a great opportunity for a behavior-changer. I took what I called a “digital siesta”.

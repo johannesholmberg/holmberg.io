@@ -8,17 +8,11 @@ const NotebookPage = ({ data }) => (
     <Helmet title={`Notebook – Holmberg.io`} />
 
     <h1 className="page-title">Notebook</h1>
-
-    <div className="c-article-list">
-      <div className="c-article-list__section">
-        <ul className="c-article-list__holder">
-          {data.allMarkdownRemark.edges.map(({node}) =>
-            <ArticleItem key={node.id} post={node} />
-          )}
-        </ul>
-      </div>
-    </div>
-
+    <ul className="article-list">
+      {data.allMarkdownRemark.edges.map(({node}) =>
+        <ArticleItem key={node.id} post={node} />
+      )}
+    </ul>
 
   </div>
 )
@@ -44,7 +38,7 @@ export const query = graphql`
             layout
             title
             category
-            date(formatString: "MMMM DD YYYY")
+            date(formatString: "MMMM DD, YYYY")
           }
           html
           excerpt

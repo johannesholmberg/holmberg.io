@@ -1,0 +1,26 @@
+.header-global {
+  padding: 0 5em 0 1em;
+  position: sticky;
+  top: 0;
+}
+
+.header-global__title {
+  font-size: 2.4em;
+  margin-top: .2em;
+
+  span {
+    display: inline-block;
+  }
+
+  span:last-child {
+    margin-left: .75em;
+    transform: translateY(-5px);
+  }
+}
+
+.header-global__description {
+  font-size: 1.25em;
+  line-height: 1.3;
+  margin: 1em 0;
+}
+

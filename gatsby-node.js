@@ -60,8 +60,6 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 
     if (node.frontmatter.layout === 'post') {
       let nameArr = slug.replace(/\//g, "").split("-");
-      console.log(nameArr);
-
       date = nameArr.splice(0, 2).join("/");
       slug = nameArr.splice(1, 100).join("-");
 

@@ -46,7 +46,7 @@ I think the conference struck a perfect balance of design and technology. It was
 - Which metrics matter?
 - The web is the web. People don’t compartmentalize what kind of experience they get.
 - Most important metrics for Amazon is start render and repeat visits.
-- Direct traffic is more patient. Traffic through search is slightly less patient. Traffic coming from Facebook is highly likely yo drop off if website is slow. Performance is perception.
+- Direct traffic is more patient. Traffic through search is slightly less patient. Traffic coming from Facebook is highly likely to drop off if website is slow. Performance is perception.
 - Pages with more scripts are slightly less likely to convert.
 - The number of DOM elements matter a lot.
 - Sessions that convert has fewer images than those who don’t.

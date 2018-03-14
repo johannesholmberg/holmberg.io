@@ -7,17 +7,18 @@ import Footer from '../components/footer'
 import Icons from '../components/icons'
 import Icon from '../components/icon'
 
-import '../assets/styles/index.css'
+import '../assets/styles/style.scss'
+//import '../assets/styles/index.css'
 
 const TemplateWrapper = ({ children, data }) => (
-  <div className="site-wrap">
-    {/* <Helmet
+  <div className="wrap">
+    <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    /> */}
+    />
     <div style={
       {
         height: '0',
@@ -30,7 +31,9 @@ const TemplateWrapper = ({ children, data }) => (
       <a href="#main-content">Skip to content</a>
     </div>
     <Header />
-    {children()}
+      <main className="main-layout">
+        {children()}
+      </main>
     <Footer />
   </div>
 )

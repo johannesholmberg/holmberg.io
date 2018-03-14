@@ -9,20 +9,34 @@ export default class PostPage extends Component {
   render() {
     const { data } = this.props;
     const { markdownRemark: post } = data;
-    const { title, date, category } = post.frontmatter;
+    const {
+      title,
+      date,
+      category,
+      ref_url
+    } = post.frontmatter;
 
     return (
-      <article className="o-main-layout">
+      <article>
         <Helmet title={`${title} – Holmberg.io`} />
 
         <PageHeader title={title} description={date} />
 
-        <div
-          className="s-main-content"
+        <div className="main-content"
           dangerouslySetInnerHTML={{
             __html: post.html
           }}
         />
+
+        { category &&
+          <p>
+            Permalink -> <a href="#">
+               { ref_url }
+              <span class="icon-holder">
+              </span>
+            </a>
+          </p>
+        }
 
       </article>
     )
@@ -41,6 +55,7 @@ export const postQuery = graphql`
         title
         category
         date(formatString: "MMMM DD, YYYY")
+        ref_url
       }
     }
   }

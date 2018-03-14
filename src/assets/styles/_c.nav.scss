@@ -1,0 +1,33 @@
+.nav-global {
+
+}
+
+.nav-global__item {
+
+}
+
+.nav-global__link {
+  font-size: 1.5em;
+  display: inline-block;
+  padding: .2em 1em .3em .8em;
+  margin: .5em 0;
+  transform: translateX(-.8em);
+  transition:
+    box-shadow .3s ease-in-out,
+    background-color .2s ease-in-out,
+    color .5s ease-in-out;
+  font-weight: 600;
+  box-shadow:
+    0 0 0 0 rgba(0,0,0,0.20),
+    inset 0 0 #222;
+
+  &--active,
+  &:hover,
+  &:focus {
+    //background: #2B2E31;
+    box-shadow:
+      12px 14px 30px 0 rgba(0,0,0,0.20),
+      inset 0 -2em #222;
+    color: #fff;
+  }
+}

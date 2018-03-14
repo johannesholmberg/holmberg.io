@@ -15,7 +15,7 @@ export default class PagePage extends Component {
         <PageHeader title={title} description={date} />
 
         <div
-          className="s-main-content"
+          className="main-content"
           dangerouslySetInnerHTML={{
             __html: post.html
           }}

@@ -1,0 +1,30 @@
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+button,
+.button {
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: .8em 10%;
+  font-family: $fontAlt;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  transition: all .1s ease-in-out;
+  width: 100%;
+
+  @include breakpoint(mobile) {
+    width: auto;
+  }
+
+  &--primary {
+    background-color: #000;
+    color: #fff;
+  }
+}
+

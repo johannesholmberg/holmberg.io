@@ -1,18 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet';
-import CaseListing from '../components/case-listing'
+import CaseItem from '../components/case-item'
 
 const WorkPage = ({ data }) => (
   <div>
     <Helmet title={`Work – Holmberg.io`} />
     <h1 className="page-title">Work</h1>
-    <div className="c-case-list">
-      {data.allMarkdownRemark.edges.map(({node}) =>
-        <CaseListing key={node.id} post={node} />
-      )}
-    </div>
-
+    {data.allMarkdownRemark.edges.map(({node}) =>
+      <CaseItem key={node.id} post={node} />
+    )}
   </div>
 )
 

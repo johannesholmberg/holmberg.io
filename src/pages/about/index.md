@@ -12,6 +12,8 @@ I’ve been working on the web for the last 10 years, designing and developing u
 
 My services include interaction design, information architecture and front-end development. I work together with teams from companies all over the world to provide responsive and optimized user interfaces.
 
+![Johannes](johannes-rectangle.jpg)
+
 
 ## About the site
 This website was made in the purpose of creating a digital home to collect the writing and the work I do. The last couple of years I have downsized on my social media appearance and wanted to have a simple home where I can experiment at my own pace.
