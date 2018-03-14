@@ -12,13 +12,7 @@ import '../assets/styles/style.scss'
 
 const TemplateWrapper = ({ children, data }) => (
   <div className="wrap">
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
+    <Helmet title={data.site.siteMetadata.title} />
     <div style={
       {
         height: '0',
@@ -30,10 +24,11 @@ const TemplateWrapper = ({ children, data }) => (
       <Icons />
       <a href="#main-content">Skip to content</a>
     </div>
+
     <Header />
-      <main className="main-layout">
-        {children()}
-      </main>
+    <main className="main-layout">
+      {children()}
+    </main>
     <Footer />
   </div>
 )

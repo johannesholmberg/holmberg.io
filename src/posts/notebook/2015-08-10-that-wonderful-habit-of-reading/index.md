@@ -3,6 +3,10 @@ layout: post
 date: "2015-08-10"
 title: "That Wonderful Habit of Reading"
 ---
+<figure>
+
+![Kindle](that-wonderful-habit-of-reading.jpg)
+</figure>
 
 Over the last three years, I’ve invested a lot of my time in reading books. It’s probably one of those habits I’m most proud of. For those three years I can count on my fingers the days that I didn't pick up my Kindle to continue my current book. It's an essential part of exploring and I don't want to be without it.
 

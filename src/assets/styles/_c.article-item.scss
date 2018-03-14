@@ -10,13 +10,13 @@
 .article-item__link {
   display: inline-block;
   margin: 0 0 .3em;
-  transition-duration: .3s;
+  transition-duration: .4s;
 
   &:hover,
   &:focus {
     box-shadow:
       12px 14px 30px 0 rgba(0,0,0,0.20),
-      inset 0 -2em 0 #222;
+      inset 0 -2.4em 0 #222;
   }
 }
 

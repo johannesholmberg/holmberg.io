@@ -9,17 +9,15 @@ export default class PagePage extends Component {
     const { markdownRemark: post } = data;
     const { title, date } = post.frontmatter;
     return (
-      <article className="o-main-layout">
+      <article>
         <Helmet title={`${title} – Holmberg.io`} />
-
-        <PageHeader title={title} description={date} />
-
-        <div
-          className="main-content"
-          dangerouslySetInnerHTML={{
-            __html: post.html
-          }}
-        />
+        <PageHeader title={title} />
+        <div className="main-content">
+          <div dangerouslySetInnerHTML={{
+              __html: post.html
+            }}
+          />
+        </div>
       </article>
     )
   }

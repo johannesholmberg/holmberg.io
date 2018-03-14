@@ -5,22 +5,16 @@
   position: relative;
   padding: 1.25em;
 
+
   @include breakpoint(tablet) {
     padding: 7% 0 7% 3em;
     display: grid;
     grid-template-columns: 22em 1fr;
+    align-items: start;
   }
 }
 
 
-.main-layout {
-
-  @include breakpoint(tablet) {
-    float: left;
-    // width: 60%;
-    // margin-left: 2em;
-  }
-}
 
 
 .main-content {

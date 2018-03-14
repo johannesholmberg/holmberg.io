@@ -2,19 +2,20 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import ArticleItem from '../components/article-item'
+import PageHeader from "../components/page-header"
 
 const NotebookPage = ({ data }) => (
-  <div>
+  <section>
     <Helmet title={`Notebook – Holmberg.io`} />
 
-    <h1 className="page-title">Notebook</h1>
+    <PageHeader title="Notebook" />
     <ul className="article-list">
       {data.allMarkdownRemark.edges.map(({node}) =>
         <ArticleItem key={node.id} post={node} />
       )}
     </ul>
 
-  </div>
+  </section>
 )
 
 export default NotebookPage

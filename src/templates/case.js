@@ -26,48 +26,45 @@ export default class CasePage extends Component {
         <Helmet title={`${title}`} />
         <PageHeader title={title} description={description} />
 
-          <figure>
-            <img
-              src={`https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image}.jpg`}
-              srcSet={`
-                https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_400/v1520835525/work/${image}.jpg 400w,
-                https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_800/v1520835525/work/${image}.jpg 800w,
-                https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image}.jpg 1400w
-              `}
-              alt={title}
-            />
-          </figure>
+        <figure>
+          <img
+            src={`https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image}.jpg`}
+            srcSet={`
+              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_400/v1520835525/work/${image}.jpg 400w,
+              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_800/v1520835525/work/${image}.jpg 800w,
+              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image}.jpg 1400w
+            `}
+            alt={title}
+          />
+        </figure>
 
-          <div className="main-content"
-            dangerouslySetInnerHTML={{
+        <div className="main-content">
+          <div dangerouslySetInnerHTML={{
             __html: post.html
           }} />
-
-
-        <aside className="sidebar">
-
-          <ul className="sidebar__meta">
-            <li className="sidebar__meta-item">
-              <strong>Production:</strong> { meta }
+          <aside className="sidebar">
+            <ul className="sidebar__meta">
+              <li className="sidebar__meta-item">
+                <strong>Production:</strong> { meta }
+                </li>
+              <li className="sidebar__meta-item">
+                <strong>Role:</strong> { role }
               </li>
-            <li className="sidebar__meta-item">
-              <strong>Role:</strong> { role }
-            </li>
-            <li className="sidebar__meta-item">
-              <strong>Techniques:</strong> { techniques }
-            </li>
-            <li className="sidebar__meta-item">
-              <strong>Client:</strong> { client }
-            </li>
-            <li className="sidebar__meta-item">
-              <strong>Website: </strong>
-              <a href={ website }>
-                { website }
-              </a>
-            </li>
-          </ul>
-
-        </aside>
+              <li className="sidebar__meta-item">
+                <strong>Techniques:</strong> { techniques }
+              </li>
+              <li className="sidebar__meta-item">
+                <strong>Client:</strong> { client }
+              </li>
+              <li className="sidebar__meta-item">
+                <strong>Website: </strong>
+                <a href={ website }>
+                  { website }
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
 
       </article>
     )

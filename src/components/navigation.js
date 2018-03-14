@@ -7,7 +7,7 @@ const Navigation = ({ data }) => {
 
   // If the permalink starts with a date then make notebook active
   const checkPost = (match, location) => {
-    if(location.pathname.startsWith('/2')) {
+    if(location.pathname.startsWith('/2') || location.pathname == '/notebook') {
       return true;
     }
   }

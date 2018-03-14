@@ -12,11 +12,8 @@ By taking this away directly at the beginning of the month I grew accustomed to 
 
 But then I stumbled upon YNAB.
 
-<figure>
-
-  ![The web interface of YNAB](ynab-1.png)
-  <figcaption>The web interface of YNAB</figcaption>
-</figure>
+![The web interface of YNAB](ynab-1.png)
+<figcaption>The web interface of YNAB</figcaption>
 
 It wasn't like a revelation at first or anything but I'm curious in ideas that can provide me with extra value, without requiring too much effort from my side. So I started to try it out.
 
@@ -27,12 +24,8 @@ The heart and soul to this approach consists of categories, but I like to call t
 
 When the categories were set up I started delegating my money to them.
 
-
-<figure>
-
-  ![A few categories set up in YNAB](ynab-2.png)
-  <figcaption>A few categories set up in YNAB</figcaption>
-</figure>
+![A few categories set up in YNAB](ynab-2.png)
+<figcaption>A few categories set up in YNAB</figcaption>
 
 Now this is something really cool. Because now I know what my money is doing. Before, I knew that for instance I had $5000 on my savings account (that also felt good, sure) but I never knew what that money was supposed to do.
 

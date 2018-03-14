@@ -15,7 +15,7 @@ The masthead is probably what’s been bothering me the most. I thought it took 
 
 I also had some ideas for a new creative direction I wanted to try out. After a few iterations with mockups and prototypes I came to this result. Before and after the modification:
 
-![The header, before and after](updates-on-the-site-1.jpg)
+![The header, before and after](updates1.jpg)
 
 The result shows much more content directly visible in a compact viewport. Exactly what I was trying to achieve.
 

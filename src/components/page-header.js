@@ -16,15 +16,18 @@ const PageHeader = ({
       <h1 className="page-header__title">
         { title }
       </h1>
-      <p className="page-header__subtitle">
-        { description }
-        { category &&
-          <span> – <span className="page-header__category">
-              { capitalizeFirstLetter(category) }
+      { description &&
+        <p className="page-header__subtitle">
+          { description }
+
+          { category &&
+            <span> – <span className="page-header__category">
+                { capitalizeFirstLetter(category) }
+              </span>
             </span>
-          </span>
-        }
-      </p>
+          }
+        </p>
+      }
     </header>
   )
 }

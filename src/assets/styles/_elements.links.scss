@@ -19,7 +19,9 @@ a {
 .nav-global__link,
 .gatsby-resp-image-link,
 .anchor,
-.button {
+.button,
+.button,
+.case-item__image-wrap {
   @extend %resetLinkStyle;
 }
 

@@ -7,11 +7,12 @@ const ArticleItem = ({ post }) => {
   }
   return (
     <li className="article-list__item article-item">
-      <Link to={post.fields.slug} className="article-item__link">
-        <h3 className="article-item__title">
-          { post.frontmatter.title }
-        </h3>
-      </Link>
+
+      <h3 className="article-item__title">
+        <Link to={post.fields.slug} className="article-item__link">
+        { post.frontmatter.title }
+        </Link>
+      </h3>
 
       <span style={{"color": "red"}}>
 

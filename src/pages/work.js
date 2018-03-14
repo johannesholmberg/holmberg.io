@@ -2,15 +2,16 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet';
 import CaseItem from '../components/case-item'
+import PageHeader from "../components/page-header"
 
 const WorkPage = ({ data }) => (
-  <div>
+  <section>
     <Helmet title={`Work – Holmberg.io`} />
-    <h1 className="page-title">Work</h1>
+    <PageHeader title="Work" />
     {data.allMarkdownRemark.edges.map(({node}) =>
       <CaseItem key={node.id} post={node} />
     )}
-  </div>
+  </section>
 )
 
 export default WorkPage
