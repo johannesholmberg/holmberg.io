@@ -1,9 +1,19 @@
 import React from 'react'
 import NavLink from 'gatsby-link'
+import Link from 'gatsby-link'
 import Icon from './icon'
 
-const Navigation = ({ data }) => (
-  <nav className="nav-global">
+const Navigation = ({ data }) => {
+
+  // If the permalink starts with a date then make notebook active
+  const checkPost = (match, location) => {
+    if(location.pathname.startsWith('/2')) {
+      return true;
+    }
+  }
+
+  return (
+    <nav className="nav-global">
 
     <ul className="nav-global__list">
 
@@ -33,6 +43,7 @@ const Navigation = ({ data }) => (
         <NavLink
           to="/notebook"
           className="nav-global__link"
+          isActive={checkPost}
           activeClassName="nav-global__link--active"
         >
           notebook
@@ -61,7 +72,9 @@ const Navigation = ({ data }) => (
 
     </ul>
   </nav>
+  )
 
-)
+
+}
 
 export default Navigation

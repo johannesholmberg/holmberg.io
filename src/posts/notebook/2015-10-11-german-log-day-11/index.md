@@ -16,10 +16,9 @@ I’ve fallen into a regular pattern in my days which goes pretty much like this
 
 - In the late afternoon I go to [german.net] and do some practice. Now the grammar comes again. I read about the rules and the system and then I do some of their intensive lessons. It’s great for applying the podcast for a practical purpose.
 
-- In the evenings I continue to read a [German book] on my Kindle. Then I can apply the rules I’ve learned throughout the day in the writing I see. In the beginning it was mostly for pleasure but now I start seeing the system in the writing. Very slowly, of course, but it comes.
+- In the evenings I continue to read a German book on my Kindle. Then I can apply the rules I’ve learned throughout the day in the writing I see. In the beginning it was mostly for pleasure but now I start seeing the system in the writing. Very slowly, of course, but it comes.
 
 The biggest lesson I think so far is that I’ve realized that it is not important to understand everything at once. My subconscious is a great asset. I just have to feed it a big chunk of the right material and when I go to sleep it will work out much of it for me. Perfect.
 
 [Laura’s German GrammarPod]: https://itunes.apple.com/us/podcast/german-grammarpod/id253979257
 [german.net]: http://german.net/
-[German book]: {{ site.url }}{% post_url 2015-10-10-sudlich-der-grenze-westlich-der-sonne %}

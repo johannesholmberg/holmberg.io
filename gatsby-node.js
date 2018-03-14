@@ -62,14 +62,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       let nameArr = slug.replace(/\//g, "").split("-");
       date = nameArr.splice(0, 2).join("/");
       slug = nameArr.splice(1, 100).join("-");
-
-      let cat = '';
-      if(node.frontmatter.category) {
-        cat = `${node.frontmatter.category}/`;
-      } else {
-        cat = ``;
-      }
-      slug = `/notebook/${cat}${date}/${slug}`;
+      slug = `/${date}/${slug}`;
     }
 
     if (node.frontmatter.layout === 'case') {
@@ -109,14 +102,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     `).then(result => {
 
       if (result.errors) {
-        console.log(result.errors);
-
         return Promise.reject(result.errors)
       }
 
       const posts = result.data.allMarkdownRemark.edges;
 
-      createTagPages(createPage, posts);
+      //createTagPages(createPage, posts);
 
       posts.forEach(({ node }) => {
         let templatePath = './src/templates/post.js';

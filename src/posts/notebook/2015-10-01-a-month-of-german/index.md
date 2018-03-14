@@ -15,7 +15,7 @@ My German skills has gone both up and down but lately I feel it has degenerated 
 
 It was a perfect start for getting familiarized with the sound of the language. I was quite amazed how quick it went to start grasping the fundamental pieces. You get a coach in form of an owl and he almost feels like a regular friend after some time. I was playing this for a couple of months (yes, I see it more as a game than anything) and it felt so great in the end, when I had conquered all the levels and that magnificent gold owl was mine. It’s a bit nerdy I know but it worked well for me.
 
-Duolingo was the perfect tool for getting started. It didn’t cost a dime and thanks to it I could take the next step and started reading some [smaller][1] [books][2] on my own.
+Duolingo was the perfect tool for getting started. It didn’t cost a dime and thanks to it I could take the next step and started reading some smaller books on my own.
 
 
 ## Next steps
@@ -32,6 +32,4 @@ So there we have it, the plan for October. I will continue to report the progres
 
 
 [Duolingo]: http://duolingo.com
-[1]: {{ site.url }}{% post_url 2015-02-22-tomokos-traume %}
-[2]: {{ site.url }}{% post_url 2015-04-08-der-magier-der-erdsee %}
-[it’s a truism]: {{ site.url }}{% post_url 2015-09-09-on-writing-well %}#highlight7
+[it’s a truism]: /2015/09/on-writing-well#highlight7

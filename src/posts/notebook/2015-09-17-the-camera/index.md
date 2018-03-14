@@ -3,8 +3,10 @@ layout: post
 date: "2015-09-17"
 title: "The Camera"
 ---
+<figure>
 
-![Camera](rolleiflex.jpg)
+  ![Camera](rolleiflex.jpg)
+</figure>
 
 _This post was first published for a course project over at [Skillshare][skillshare]. The assignment was to write a 500-word essay about one of my objects._
 

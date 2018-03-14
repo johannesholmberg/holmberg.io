@@ -12,4 +12,4 @@ Later on, as I went back into modern everyday life, this digital madness that I�
 
 I love technology and I love the positive impact it can have on my life. But what I hate is the fact that it’s taken for granted to always be on, always be updating me. This is kind of a pressure I’ve been putting on myself but something I need to step away from. Enough is enough. I’m starting by turning off the computer at weekends.
 
-[see the world a couple of years ago]: {{ site.url }}{% post_url 2013-01-18-getting-on-that-plane %}
+[see the world a couple of years ago]: /2013/01/getting-on-that-plane

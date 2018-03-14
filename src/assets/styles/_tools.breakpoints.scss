@@ -8,16 +8,12 @@
     @media (min-width: 36em) { @content; }
   }
 
-  @else if $point == nav {
-    @media (min-width: 44em) { @content; }
-  }
-
   @else if $point == tablet {
-    @media (min-width: 48em) { @content; }
+    @media (min-width: 58em) { @content; }
   }
 
   @else if $point == desktop {
-    @media (min-width: 60em) { @content; }
+    @media (min-width: 80em) { @content; }
   }
 
   @else {

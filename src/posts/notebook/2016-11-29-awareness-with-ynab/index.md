@@ -12,7 +12,7 @@ By taking this away directly at the beginning of the month I grew accustomed to 
 
 But then I stumbled upon YNAB.
 
-<figure class="figure--margins">
+<figure>
 
   ![The web interface of YNAB](ynab-1.png)
   <figcaption>The web interface of YNAB</figcaption>
@@ -28,7 +28,7 @@ The heart and soul to this approach consists of categories, but I like to call t
 When the categories were set up I started delegating my money to them.
 
 
-<figure class="figure--margins">
+<figure>
 
   ![A few categories set up in YNAB](ynab-2.png)
   <figcaption>A few categories set up in YNAB</figcaption>

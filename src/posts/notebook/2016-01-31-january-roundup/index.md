@@ -1,15 +1,10 @@
 ---
 layout: post
-title: "January Roundup"
 date: "2016-01-31"
-has_intro: true
-redirect_from:
-  - /writing/69/
-  - /notebook/january-roundup-2016/
+title: "January Roundup"
 ---
 
 It's been a little bit of a vacuum month for me. I feel like January just sailed by. It’s been more of a cleanup month than anything else. It was so much happening around Christmas, and so much baggage that followed over New Years, that this month's purpose was mostly for tying up loose ends.
-{: .intro}
 
 ## German training
 It's been the last month of the class I've been taking at Migros Klubbschule. It has been a great run but to be honest I'm quite happy that it now comes to an end. Lately, I've felt a lack of motivation and I haven't had the time to study as intensive as I've done previously. It's going to be great to get back two full evenings each week in my life. I see my greatest achievement as having finished reading _[Die Entdeckung Der Langsamkeit]_. Now I'm going to take a complete break of German training in February. My next goal will be to try and get the B1 certificate in June. So I will probably start again to pick up some intensive training in April or so.
@@ -32,8 +27,8 @@ As I mentioned previously, I will have some time back in my life for this month.
 - CSS Grid, CSS Regions and also a deeper understanding of Flexbox are things I want to experiment with this month.
 - I will try forging my morning routine back into shape. I've been a bit in hibernation over the winter, but I will try to leave that now as the days are getting brighter again.
 
-[Die Entdeckung Der Langsamkeit]: {{ site.url }}{% post_url 2016-01-09-die-entdeckung-der-langsamkeit %}
+[Die Entdeckung Der Langsamkeit]: /2016/01/die-entdeckung-der-langsamkeit
 [Blinkist]: https://www.blinkist.com/en/
 [Lifesum]: https://lifesum.com/
-[UP bracelet]: {{ site.url }}{% post_url 2015-04-07-getting-up %}
-[Circling The Sun]: {{ site.url }}{% post_url 2016-01-22-circling-the-sun %}
+[UP bracelet]: /2015/04/getting-up
+[Circling The Sun]: /2016/01/circling-the-sun

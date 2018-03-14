@@ -52,10 +52,10 @@ Working out the habits before even getting to the main work has been the most su
 
 >‘You shouldn’t lie till ten. There’s the very prime of the morning gone long before that time. A person who has not done one half his day’s work by ten o’clock, runs a chance of leaving the other half undone.’ — [Emily Brontë, Wuthering Heights]
 
-[UP24]: {{ site.url }}{% post_url 2015-04-07-getting-up %}
-[UP24 bracelet]: {% post_url 2015-04-07-getting-up %}
+[UP24]: /2015/04/getting-up
+[UP24 bracelet]: /2015/04/getting-up
 [Jeff Finley]: https://twitter.com/jeff_finley
 [The Web Ahead]: http://thewebahead.net/
 [Unfinished Business]: http://www.unfinished.bz/
 [snoozing the rest]: http://www.google.com/inbox/
-[Emily Brontë, Wuthering Heights]: {{ site.url }}{% post_url 2015-05-03-wuthering-heights %}/#highlight2
+[Emily Brontë, Wuthering Heights]: /2015/05/wuthering-heights/#highlight2

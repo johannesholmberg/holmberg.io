@@ -6,7 +6,7 @@ title: "Why I love this"
 
 I have always been fascinated by technology, about the things one can do with the right set of equipment. I think my fascination started when I was around 7 years old.
 
-> <q>Any sufficiently advanced technology is indistinguishable from magic.</q> -- <cite>Arthur C. Clarke</cite>
+> <q>Any sufficiently advanced technology is indistinguishable from magic.</q> — <cite>Arthur C. Clarke</cite>
 
 Our family had recently got a computer. It was an Olivetti. I don't remember the actual model but I remember me and my brother was having a lot of fun playing games on it.
 

@@ -12,7 +12,10 @@ I’ve been working on the web for the last 10 years, designing and developing u
 
 My services include interaction design, information architecture and front-end development. I work together with teams from companies all over the world to provide responsive and optimized user interfaces.
 
-![Johannes](johannes-rectangle.jpg)
+<figure>
+
+  ![Johannes](johannes-rectangle.jpg)
+</figure>
 
 
 ## About the site

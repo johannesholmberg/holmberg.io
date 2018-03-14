@@ -6,6 +6,11 @@ title: "Cleaning the homescreen"
 
 A couple of weeks ago I did a little decluttering of my iPhone’s homescreen and I’m pretty happy with the outcome.
 
+<figure class="portrait">
+
+  ![iPhone homescreen](homescreen.jpg)
+</figure>
+
 My idea was to single out all the apps I use on a daily basis and place them directly on the homescreen; the rest is dropped in the ‘Utilities’ folder where they’re accessed by using the splendid search functionality in iOS 7. The result is this.
 
 - [Runkeeper’s](http://runkeeper.com/home) the app I use to track down walks, swimming, bicycling and hiking trips.

@@ -28,11 +28,11 @@ What is nice about Basel is that it is located pretty much in the middle of Euro
 - Hiked a _lot_.
 - Joined a [book club].
 
-[wrote last year]: {{ site.url }}{% post_url 2014-12-31-a-year-of-retreat %}
-[learning German]: {{ site.url }}{% post_url 2015-10-01-a-month-of-german %}
+[wrote last year]: /2014/12/a-year-of-retreat
+[learning German]: /2015/10/a-month-of-german
 [YNAB]: http://www.youneedabudget.com/
-[Rome]: {{ site.url }}{% post_url 2015-10-19-new-place %}
-[activity tracker]: {{ site.url }}{% post_url 2015-04-07-getting-up %}
-[home office set up]: {{ site.url }}{% post_url 2015-09-02-workstation %}
-[monthly experiments]: {{ site.url }}{% post_url 2015-10-01-a-month-of-german %}
-[book club]: {{ site.url }}{% post_url 2015-08-28-the-tin-drum %}
+[Rome]: /2015/10/new-place
+[activity tracker]: /2015/04/getting-up
+[home office set up]: /2015/09/workstation
+[monthly experiments]: /2015/10/a-month-of-german
+[book club]: /2015/08/the-tin-drum

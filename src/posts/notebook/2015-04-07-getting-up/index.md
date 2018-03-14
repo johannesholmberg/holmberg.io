@@ -10,6 +10,8 @@ I laughed the first time I laid my eyes on one, “I would never pay money to pu
 
 Then I realized that the value for this thing laid in the reverse of that last statement. It doesn’t add anything, but it takes away some. Wait, what?
 
+![Up Bracelet](up-bracelet.jpg)
+
 The worst thing I know about my smartphone is that it is *the* single [biggest distraction machine] in my life. That’s why I tried [ridding myself of it] for a year to see what it was like living without it. That experience changed the way I handle my phone today and unlike many others, I usually never have it on me. Too close and it increases the risk that I will pick it up and unlock that screen. And 99% of the times, for no reason at all. It robs me several minutes before my brain picks up why I did it in the first place.
 
 I do use it to set an alarm clock in the morning. One great thing about the iPhone in particular (probably true for other brands as well) is that you can schedule the “Do not disturb” feature, so every night at 10 PM nobody can reach me anymore (Sorry about that mom.)

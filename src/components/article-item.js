@@ -2,6 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const ArticleItem = ({ post }) => {
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
   return (
     <li className="article-list__item article-item">
       <Link to={post.fields.slug} className="article-item__link">
@@ -18,7 +21,10 @@ const ArticleItem = ({ post }) => {
         {post.frontmatter.date}
 
         { post.frontmatter.category &&
-          <span> – { post.frontmatter.category}</span>
+          <span> – <span className="article-item__category">
+              { capitalizeFirstLetter(post.frontmatter.category) }
+            </span>
+          </span>
         }
       </p>
     </li>

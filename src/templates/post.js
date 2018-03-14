@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import AuthorCard from "../components/author-card";
 import PageHeader from "../components/page-header";
+import Icon from '../components/icon'
 require("prismjs/themes/prism-solarizedlight.css");
 
 export default class PostPage extends Component {
@@ -20,23 +21,32 @@ export default class PostPage extends Component {
       <article>
         <Helmet title={`${title} – Holmberg.io`} />
 
-        <PageHeader title={title} description={date} />
-
-        <div className="main-content"
-          dangerouslySetInnerHTML={{
-            __html: post.html
-          }}
+        <PageHeader
+          title={title}
+          description={date}
+          category={category}
         />
 
-        { category &&
-          <p>
-            Permalink -> <a href="#">
-               { ref_url }
-              <span class="icon-holder">
-              </span>
-            </a>
-          </p>
-        }
+        <div className="main-content">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: post.html
+            }}
+          />
+
+          { category == "links" &&
+            <section className="footer-content">
+              <p>
+                 <a
+                  href={ ref_url }
+                  className="button button--primary">
+                  <Icon id="link" />
+                  Permalink
+                </a>
+              </p>
+            </section>
+          }
+        </div>
 
       </article>
     )

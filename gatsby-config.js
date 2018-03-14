@@ -25,21 +25,19 @@ module.exports = {
           {
             resolve: `gatsby-remark-embed-youtube`,
             options: {
-              width: 800,
-              ratio: 1.77,
+              width: 1000,
             }
           },
           {
             resolve: `gatsby-remark-embed-video`,
             options: {
-              width: 800,
-              ratio: 1.77,
+              width: 1000,
             }
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1100,
+              maxWidth: 1000,
               sizeByPixelDensity: true,
             },
           },
