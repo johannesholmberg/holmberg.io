@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import Typekit from 'react-typekit'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
@@ -11,6 +12,7 @@ import '../assets/styles/style.scss'
 
 const TemplateWrapper = ({ children, data }) => (
   <div className="wrap">
+    <Typekit kitId="fyg1ntw" />
     <Helmet
       title={`Home – ${data.site.siteMetadata.name}`}
     />

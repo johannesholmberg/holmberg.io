@@ -14,7 +14,11 @@ h1 {
   margin: 0 0 .2em;
   line-height: 1;
   letter-spacing: -.02em;
-  font-size: 4em;
+  font-size: 3em;
+
+  @include breakpoint(30em) {
+    font-size: 4em;
+  }
 
   @include breakpoint(tablet) {
     font-size: 5.625em;

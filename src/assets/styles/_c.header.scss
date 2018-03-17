@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   align-items: center;
+  margin-bottom: 1em;
 
   @include breakpoint(tablet) {
     display: block;
@@ -9,11 +10,12 @@
     width: 17em;
     position: sticky;
     top: 4.5%;
+    margin-bottom: 0;
   }
 }
 
 .header-global__title {
-  font-size: 2em;
+  font-size: 1.8em;
 
   @include breakpoint(25em) {
     font-size: 2.4em;

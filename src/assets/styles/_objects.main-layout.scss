@@ -3,7 +3,7 @@
   z-index: 2;
   margin: 0 auto;
   position: relative;
-  padding: 1em 1.25em;
+  padding: 1em 5%;
 
 
   @include breakpoint(tablet) {
@@ -23,7 +23,7 @@
   .footer-content {
     max-width: 50rem;
 
-    @include breakpoint(tablet) {
+    @include breakpoint(46em) {
       padding-right: 2em;
     }
   }

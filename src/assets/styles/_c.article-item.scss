@@ -7,24 +7,15 @@
   margin: 2em 0;
 }
 
-.article-item__link {
-  display: inline-block;
-  margin: 0 0 .3em;
-  transition-duration: .4s;
-
-  &:hover,
-  &:focus {
-    box-shadow:
-      12px 14px 30px 0 rgba(0,0,0,0.20),
-      inset 0 -2.4em 0 #222;
-  }
-}
-
 .article-item__title {
   font-size: 1.2em;
-  margin: 0;
+  margin: 0 0 .3em;
   padding: 0;
   display: inline-block;
+}
+
+.article-item__link {
+  display: inline;
 }
 
 .article-item__date {
