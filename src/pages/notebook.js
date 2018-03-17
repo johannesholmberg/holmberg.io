@@ -6,7 +6,9 @@ import PageHeader from "../components/page-header"
 
 const NotebookPage = ({ data }) => (
   <section>
-    <Helmet title={`Notebook – Holmberg.io`} />
+    <Helmet
+      title={`Notebook – ${data.site.siteMetadata.name}`}
+    />
 
     <PageHeader title="Notebook" />
     <ul className="article-list">
@@ -24,8 +26,7 @@ export const query = graphql`
   query NotebookQuery {
     site {
       siteMetadata {
-        title
-        description
+        name
       }
     }
     allMarkdownRemark(

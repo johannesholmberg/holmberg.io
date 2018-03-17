@@ -6,7 +6,12 @@ import Img from "gatsby-image";
 
 const IndexPage = ({ data }) => (
   <section>
-    <Helmet title={`Home – Holmberg.io`} />
+    <Helmet
+      title={`Home – ${data.site.siteMetadata.name}`}
+      meta={[
+        { property: 'description', content: data.site.siteMetadata.description },
+      ]}
+    />
 
     <h1 className="c-home-section__title">
       Hello there.<br /> I’m Johannes.
@@ -41,6 +46,12 @@ export default IndexPage
 
 export const indexQuery = graphql`
   query indexQuery {
+    site {
+      siteMetadata {
+        name
+        description
+      }
+    }
     profile: imageSharp(id: {regex: "/johannes-rectangle.jpg/"}) {
       sizes(maxWidth: 1040) {
         ...GatsbyImageSharpSizes

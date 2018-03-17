@@ -8,11 +8,12 @@ import Icons from '../components/icons'
 import Icon from '../components/icon'
 
 import '../assets/styles/style.scss'
-//import '../assets/styles/index.css'
 
 const TemplateWrapper = ({ children, data }) => (
   <div className="wrap">
-    <Helmet title={data.site.siteMetadata.title} />
+    <Helmet
+      title={`Home – ${data.site.siteMetadata.name}`}
+    />
     <div style={
       {
         height: '0',
@@ -43,7 +44,7 @@ export const query = graphql`
 query LayoutQuery {
   site {
     siteMetadata {
-      title
+      name
       description
     }
   }

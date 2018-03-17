@@ -19,7 +19,9 @@ export default class PostPage extends Component {
 
     return (
       <article>
-        <Helmet title={`${title} – Holmberg.io`} />
+        <Helmet
+          title={`${title} – ${data.site.siteMetadata.name}`}
+        />
 
         <PageHeader
           title={title}
@@ -55,6 +57,11 @@ export default class PostPage extends Component {
 
 export const postQuery = graphql`
   query BlogPostQuery($slug: String!) {
+    site {
+      siteMetadata {
+        name
+      }
+    }
     markdownRemark(fields: {
       slug: {
         eq: $slug

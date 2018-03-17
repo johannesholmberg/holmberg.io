@@ -10,7 +10,9 @@ export default class PagePage extends Component {
     const { title, date } = post.frontmatter;
     return (
       <article>
-        <Helmet title={`${title} – Holmberg.io`} />
+        <Helmet
+          title={`${title} – ${data.site.siteMetadata.name}`}
+        />
         <PageHeader title={title} />
         <div className="main-content">
           <div dangerouslySetInnerHTML={{
@@ -25,6 +27,11 @@ export default class PagePage extends Component {
 
 export const pageQuery = graphql`
   query pageQuery($slug: String!) {
+    site {
+      siteMetadata {
+        name
+      }
+    }
     markdownRemark(fields: {
       slug: {
         eq: $slug
