@@ -3,6 +3,7 @@ layout: page
 title: "Contact"
 ---
 
+You can contact me by email at <a href="mailto:johannes@holmberg.io">johannes@holmberg.io</a>.
 
 <form name="contact" method="POST" netlify>
   <p>
