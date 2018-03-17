@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Johannes Holmberg',
-    description: '',
+    name: 'Johannes Holmberg',
+    description: 'Johannes Holmberg is a front-end web designer in Basel, Switzerland.',
     siteUrl: `https://holmberg.io`,
   },
   plugins: [
@@ -12,6 +12,24 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/assets/icons/favicon.png",
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false
+        }
+      }
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
