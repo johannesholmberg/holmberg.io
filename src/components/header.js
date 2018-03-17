@@ -11,7 +11,7 @@ const Header = () => (
         <span>holmberg</span>
       </h1>
       <p className="header-global__description">
-        frontend developer, ux designer, minimalist, bookworm
+        frontend developer, ux designer, minimalist
       </p>
     </div>
 
