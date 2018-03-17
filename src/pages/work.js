@@ -9,6 +9,9 @@ const WorkPage = ({ data }) => (
   <section>
     <Helmet
       title={`Work – ${data.site.siteMetadata.name}`}
+      meta={[
+        { property: 'description', content: "Project and case studies." },
+      ]}
     />
     <PageHeader title="Work" />
     {data.allMarkdownRemark.edges.map(({node}) =>

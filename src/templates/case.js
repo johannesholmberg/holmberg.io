@@ -25,6 +25,9 @@ export default class CasePage extends Component {
       <article>
         <Helmet
           title={`${title} – ${data.site.siteMetadata.name}`}
+          meta={[
+            { property: 'description', content: post.excerpt },
+          ]}
         />
         <PageHeader title={title} description={description} />
 
@@ -86,6 +89,7 @@ export const caseQuery = graphql`
       }
     }) {
       html
+      excerpt
       frontmatter {
         title
         date

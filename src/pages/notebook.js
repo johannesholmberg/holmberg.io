@@ -8,6 +8,9 @@ const NotebookPage = ({ data }) => (
   <section>
     <Helmet
       title={`Notebook – ${data.site.siteMetadata.name}`}
+      meta={[
+        { property: 'description', content: "A collection of my writing, ideas and links over the years." },
+      ]}
     />
 
     <PageHeader title="Notebook" />

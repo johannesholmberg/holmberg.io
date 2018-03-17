@@ -12,6 +12,9 @@ export default class PagePage extends Component {
       <article>
         <Helmet
           title={`${title} – ${data.site.siteMetadata.name}`}
+          meta={[
+            { property: 'description', content: post.excerpt },
+          ]}
         />
         <PageHeader title={title} />
         <div className="main-content">
@@ -38,6 +41,7 @@ export const pageQuery = graphql`
       }
     }) {
       html
+      excerpt
       frontmatter {
         title
         date(formatString: "MMMM DD YYYY")

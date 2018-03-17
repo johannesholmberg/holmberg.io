@@ -21,6 +21,9 @@ export default class PostPage extends Component {
       <article>
         <Helmet
           title={`${title} – ${data.site.siteMetadata.name}`}
+          meta={[
+            { property: 'description', content: post.excerpt },
+          ]}
         />
 
         <PageHeader
@@ -68,6 +71,7 @@ export const postQuery = graphql`
       }
     }) {
       html
+      excerpt
       frontmatter {
         title
         category
