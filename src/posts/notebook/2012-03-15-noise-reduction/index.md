@@ -2,6 +2,7 @@
 layout: post
 date: "2012-03-15"
 title: "Noise reduction"
+category: "articles"
 ---
 
 Lately, I've been thinking a lot about noise and what to do with it. It's not the sound I'm talking about, more of the things you're surrounded by. For instance there is a lot of noise on the web.

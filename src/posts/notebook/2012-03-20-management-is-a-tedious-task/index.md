@@ -2,6 +2,7 @@
 layout: post
 title: "Management is a tedious task"
 date: "2012-03-20"
+category: "articles"
 ---
 
 One thing that I've learned over the years is this: The more things you have, the more time it takes to manage. I'm a structural guy, I like to put things in their correct folder and label them as I go. This gives me some kind of inner peace and calms my nerves.

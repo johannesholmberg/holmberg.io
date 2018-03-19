@@ -1,11 +1,7 @@
 ---
 layout: post
-title: "German Log: Day 3"
 date: "2015-10-03"
-has_intro: true
-redirect_from:
-  - /writing/german-update/
-  - /notebook/german-update/
+title: "German Log: Day 3"
 ---
 
 A couple of days in on my month of German and I have some updates.

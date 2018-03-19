@@ -2,7 +2,13 @@ html {
   color: $text;
   font-size: .9em;
 
-  @include breakpoint(tablet) {
+
+  @include breakpoint(38em) {
+    font-size: 1em;
+    font-size: calc( 14px + 6 * ((100vw - 500px) / 1500));
+  }
+
+  @include breakpoint(71em) {
     font-size: 1em;
   }
 }
@@ -25,19 +31,15 @@ p,
 ul {
   font-size: 1.375rem;
   margin: 1.5em 0;
-
+  color: #333;
 }
 
 ul {
-  padding-left: .75em;
-
-  @include breakpoint(tablet) {
-    padding-left: 0;
-  }
+  padding-left: 1.25em;
 }
 
 li {
-  margin: .25em 0;
+  margin: .35em 0;
 }
 
 strong {

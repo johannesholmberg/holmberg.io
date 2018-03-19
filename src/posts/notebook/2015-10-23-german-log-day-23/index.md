@@ -1,11 +1,7 @@
 ---
 layout: post
-title: "German Log: Day 23"
 date: "2015-10-23"
-has_intro: true
-redirect_from:
-  - /writing/german-log-day-23/
-  - /notebook/german-log-day-23/
+title: "German Log: Day 23"
 ---
 
 I’m actually starting to think in German. That’s a great step. After doing an intensive period of grammar training and listening to podcasts, I’ve allowed myself a bit more slack.

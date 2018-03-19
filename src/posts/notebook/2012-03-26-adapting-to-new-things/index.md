@@ -2,6 +2,7 @@
 layout: post
 date: "2012-03-26"
 title: "Adapting to new things"
+category: "articles"
 ---
 
 Adapt to the new and leave things behind is hard. We tend to stick to what we know, because it feels safe and comfortable. We want things to be as they always have been.

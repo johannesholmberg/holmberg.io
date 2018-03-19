@@ -9,6 +9,7 @@ export default class PostPage extends Component {
 
   render() {
     const { data } = this.props;
+    const { location } = this.props;
     const { markdownRemark: post } = data;
     const {
       title,
@@ -17,12 +18,22 @@ export default class PostPage extends Component {
       ref_url
     } = post.frontmatter;
 
+    let canonical;
+    if (category == 'links') {
+      canonical = ref_url;
+    } else {
+      canonical = `${data.site.siteMetadata.siteUrl}${location.pathname}`;
+    }
+
     return (
       <article>
         <Helmet
           title={`${title} – ${data.site.siteMetadata.name}`}
+          link={[
+            { rel: 'canonical', href: canonical},
+          ]}
           meta={[
-            { property: 'description', content: post.excerpt },
+            { name: 'description', content: post.excerpt },
           ]}
         />
 
@@ -63,6 +74,7 @@ export const postQuery = graphql`
     site {
       siteMetadata {
         name
+        siteUrl
       }
     }
     markdownRemark(fields: {

@@ -1,17 +1,19 @@
 h1,
 h2,
-h3,
-h4 {
-  line-height: 1.25;
+h3 {
   font-weight: 600;
+  margin: 1.5em 0 .5em;
+  padding-top: .4em;
 
-  & + p {
+  & + p,
+  & + ul {
     margin-top: 0;
   }
 }
 
 h1 {
   margin: 0 0 .2em;
+  padding: 0;
   line-height: 1;
   letter-spacing: -.02em;
   font-size: 3em;
@@ -20,7 +22,7 @@ h1 {
     font-size: 4em;
   }
 
-  @include breakpoint(tablet) {
+  @include breakpoint(75em) {
     font-size: 5.625em;
   }
 
@@ -30,14 +32,10 @@ h2 {
   font-size: 2em;
   line-height: 1.1;
   letter-spacing: -.01em;
-  margin: 1.6em 0 .5em;
-  padding-top: .4em;
 }
 
 h3 {
-  font-size: 1.6em;
-  margin: .6em 0 .5em;
-  padding-top: 1em;
-  letter-spacing: -.01em;
-  padding-top: .4em;
+  font-size: 1.5em;
+  line-height: 1.25;
+  letter-spacing: .02em;
 }

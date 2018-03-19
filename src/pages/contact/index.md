@@ -3,28 +3,12 @@ layout: page
 title: "Contact"
 ---
 
-You can contact me by email at <a href="mailto:johannes@holmberg.io">johannes@holmberg.io</a>.
+You can either connect with me on any of the following networks.
+ - [LinkedIn](https://www.linkedin.com/in/johannesholmberg)
+ - [Twitter](https://twitter.com/holmbergio)
+ - [Github](https://github.com/johannesholmberg)
+ - [Codepen](https://codepen.io/johannesholmberg)
+ - [Instagram](https://www.instagram.com/johannesholmberg/)
+ - [Flickr](https://www.flickr.com/photos/138261815@N06/)
 
-<form name="contact" method="POST" netlify>
-  <p>
-    <label>
-      Your Name:
-      <input type="text" name="name">
-    </label>
-  </p>
-  <p>
-    <label>
-      Your Email:
-      <input type="email" name="email">
-    </label>
-  </p>
-  <p>
-    <label>
-      Message:
-      <textarea name="message"></textarea>
-    </label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+Or you can get in touch directly by email at <a href="mailto:johannes@holmberg.io">johannes@holmberg.io</a>

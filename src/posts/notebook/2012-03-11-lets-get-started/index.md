@@ -2,6 +2,7 @@
 layout: post
 date: "2012-03-11"
 title: "Let’s get started"
+category: "journal"
 ---
 
 Ever since I was a kid I have always wanted to write. I had a blog once, a blog that slowly faded because I wrote about stuff that didn't really interest me. Engagement is important. You need to be passionate about the things you do.

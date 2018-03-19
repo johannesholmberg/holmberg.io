@@ -43,13 +43,15 @@ module.exports = {
           {
             resolve: `gatsby-remark-embed-youtube`,
             options: {
-              width: 1000,
+              width: 1600,
+              height: 900,
             }
           },
           {
             resolve: `gatsby-remark-embed-video`,
             options: {
-              width: 1000,
+              width: 1600,
+              height: 900,
             }
           },
           {

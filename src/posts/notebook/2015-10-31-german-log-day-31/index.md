@@ -1,11 +1,7 @@
 ---
 layout: post
-title: "German Log: Day 31"
 date: "2015-10-31"
-has_intro: true
-redirect_from:
-  - /writing/german-log-day-31/
-  - /notebook/german-log-day-31/
+title: "German Log: Day 31"
 ---
 
 Last day of the German project. The other day I started the course in town that I had signed up for. Originally it was planned to start at the beginning of the month, but since it was too few attendants back then, it got postponed.
