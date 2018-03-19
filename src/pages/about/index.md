@@ -11,7 +11,7 @@ title: "About"
 ## About me
 
 I’m Johannes Holmberg and I work with the web.
-I’m a consultant front-end web designer living and working out of beautiful <a href="https://www.google.com/search?q=basel+switzerland&espv=2&biw=2290&bih=1316&site=webhp&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwi2u7--647QAhWHWxQKHRSgCVIQ_AUIBigB">Basel, Switzerland</a>.
+I’m a consultant frontend designer living and working out of beautiful <a href="https://www.google.com/search?q=basel+switzerland&espv=2&biw=2290&bih=1316&site=webhp&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwi2u7--647QAhWHWxQKHRSgCVIQ_AUIBigB">Basel, Switzerland</a>.
 
 I’ve been working on the web for the last 10 years, designing and developing usable online solutions. What I do is making design and technology work together on the web.
 

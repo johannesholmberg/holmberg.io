@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => (
 
     <div className="main-content">
       <div>
-        <p>I’m Johannes, a Frontend Designer located in beautiful Basel at the northwest of Switzerland. Over the last 10 years I’ve been working on designing and developing usable online solutions. My job is to make technology and design work together, to form an experience that looks and functions beautifully on a never-ending stream of connected devices.</p>
+        <p>I’m Johannes, a frontend designer located in beautiful Basel at the northwest of Switzerland. Over the last 10 years I’ve been working on designing and developing usable online solutions. My job is to make technology and design work together, to form an experience that looks and functions beautifully on a never-ending stream of connected devices.</p>
         <p>I partner up with agencies and IT companies who need a hand in bringing their creative visions to life. I’ve collaborated with development teams from all over the world incorporating designs for their platforms. I’ve got a passion for writing standards-compliant code that is responsive, accessible and performant.</p>
         <p>Specialties: Responsive Web Design, Mobile Web Strategy, Standards-Compliant HTML5, Well-Organized CSS, JavaScript, UX Design, Sass, Git and Gulp workflows.</p>
       </div>
