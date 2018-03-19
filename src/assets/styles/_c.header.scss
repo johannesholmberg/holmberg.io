@@ -1,8 +1,11 @@
 .header-global {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  align-items: center;
   margin-bottom: 1em;
+
+  @supports(display: grid) {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+  }
 
   @include breakpoint(tablet) {
     display: block;
@@ -11,6 +14,16 @@
     position: sticky;
     top: 4.5%;
     margin-bottom: 0;
+  }
+}
+
+.header-global__text {
+  float: left;
+  width: 50%;
+
+  @supports(display: grid) {
+    float: none;
+    width: auto;
   }
 }
 

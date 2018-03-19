@@ -1,13 +1,22 @@
 .nav-global {
-  grid-row: 1;
-  grid-column: 2;
+  float: right;
   text-align: right;
   margin-left: 2em;
+
+  @supports(display: grid) {
+    grid-row: 1;
+    grid-column: 2;
+  }
 
   @include breakpoint(tablet) {
     text-align: left;
     margin-left: 0;
+    float: none;
   }
+}
+
+.nav-global__item {
+  margin: 0;
 }
 
 .nav-global__link {
