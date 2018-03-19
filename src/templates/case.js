@@ -26,7 +26,7 @@ export default class CasePage extends Component {
         <Helmet
           title={`${title} – ${data.site.siteMetadata.name}`}
           meta={[
-            { property: 'description', content: post.excerpt },
+            { name: 'description', content: post.excerpt },
           ]}
         />
         <PageHeader title={title} description={description} />

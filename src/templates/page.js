@@ -13,7 +13,7 @@ export default class PagePage extends Component {
         <Helmet
           title={`${title} – ${data.site.siteMetadata.name}`}
           meta={[
-            { property: 'description', content: post.excerpt },
+            { name: 'description', content: post.excerpt },
           ]}
         />
         <PageHeader title={title} />

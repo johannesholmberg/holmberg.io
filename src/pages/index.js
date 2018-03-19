@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => (
     <Helmet
       title={`Home – ${data.site.siteMetadata.name}`}
       meta={[
-        { property: 'description', content: data.site.siteMetadata.description },
+        { name: 'description', content: data.site.siteMetadata.description },
       ]}
     />
 

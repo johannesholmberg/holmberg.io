@@ -10,7 +10,7 @@ const WorkPage = ({ data }) => (
     <Helmet
       title={`Work – ${data.site.siteMetadata.name}`}
       meta={[
-        { property: 'description', content: "Project and case studies." },
+        { name: 'description', content: "Project and case studies." },
       ]}
     />
     <PageHeader title="Work" />

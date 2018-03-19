@@ -9,7 +9,7 @@ const NotebookPage = ({ data }) => (
     <Helmet
       title={`Notebook – ${data.site.siteMetadata.name}`}
       meta={[
-        { property: 'description', content: "A collection of my writing, ideas and links over the years." },
+        { name: 'description', content: "A collection of my writing, ideas and links over the years." },
       ]}
     />
 
