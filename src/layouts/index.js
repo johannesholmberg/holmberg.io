@@ -11,28 +11,27 @@ import Icon from '../components/icon'
 import '../assets/styles/style.scss'
 
 const TemplateWrapper = ({ children, data }) => (
-  <div className="wrap">
+  <div className="page">
     <Typekit kitId="fyg1ntw" />
     <Helmet
       title={`Home – ${data.site.siteMetadata.name}`}
     />
-    <div style={
-      {
-        height: '0',
-        width: '0',
-        position: 'absolute',
-        visibility: 'hidden'
-      }
-    }>
+
+    <div style={{ height: '0', width: '0', position: 'absolute', visibility: 'hidden', }}>
       <Icons />
-      <a href="#main-content">Skip to content</a>
     </div>
 
-    <Header />
-    <main className="main-layout">
-      {children()}
-    </main>
-    <Footer />
+    <a href="#main" className="skip-content visuallyhidden">
+      Skip to content
+    </a>
+
+    <div className="wrap">
+      <Header />
+      <main id="main" className="main-layout">
+        {children()}
+      </main>
+      <Footer />
+    </div>
   </div>
 )
 
