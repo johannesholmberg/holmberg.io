@@ -12,6 +12,13 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-20488297-3",
+        head: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-favicon`,
       options: {
         logo: "./src/assets/icons/favicon.png",
