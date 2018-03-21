@@ -1,7 +1,7 @@
 import React from 'react'
 import NavLink from 'gatsby-link'
 
-const Navigation = ({ data }) => {
+const Navigation = () => {
   // If the permalink starts with a date then make notebook active
   const checkPost = (match, location) => {
     if (

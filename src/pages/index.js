@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import ArticleItem from '../components/article-item'
 
@@ -50,6 +51,10 @@ const IndexPage = ({ data }) => (
     </ul>
   </section>
 )
+
+IndexPage.propTypes = {
+  data: PropTypes.any,
+}
 
 export default IndexPage
 

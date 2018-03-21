@@ -1,10 +1,18 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import PageHeader from '../components/page-header'
 import Icon from '../components/icon'
 require('prismjs/themes/prism-solarizedlight.css')
 
 export default class PostPage extends Component {
+  static get propTypes() {
+    return {
+      data: PropTypes.any,
+      location: PropTypes.any,
+    }
+  }
+
   render() {
     const { data } = this.props
     const { location } = this.props
@@ -15,7 +23,9 @@ export default class PostPage extends Component {
     if (category == 'links') {
       canonical = ref_url
     } else {
-      canonical = `${data.site.siteMetadata.siteUrl}${location.pathname}`
+      canonical = `${data.site.siteMetadata.siteUrl}${
+        location.pathname
+      }`
     }
 
     return (
@@ -26,7 +36,11 @@ export default class PostPage extends Component {
           meta={[{ name: 'description', content: post.excerpt }]}
         />
 
-        <PageHeader title={title} description={date} category={category} />
+        <PageHeader
+          title={title}
+          description={date}
+          category={category}
+        />
 
         <div className="main-content">
           <div

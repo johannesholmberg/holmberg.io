@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import ArticleItem from '../components/article-item'
 import PageHeader from '../components/page-header'
@@ -23,6 +24,10 @@ const NotebookPage = ({ data }) => (
     </ul>
   </section>
 )
+
+NotebookPage.propTypes = {
+  data: PropTypes.any,
+}
 
 export default NotebookPage
 

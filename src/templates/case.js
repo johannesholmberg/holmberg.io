@@ -1,8 +1,15 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import PageHeader from '../components/page-header'
 
 export default class CasePage extends Component {
+  static get propTypes() {
+    return {
+      data: PropTypes.any,
+    }
+  }
+
   render() {
     const { data } = this.props
     const { markdownRemark: post } = data

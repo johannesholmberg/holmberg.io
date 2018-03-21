@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 const CaseItem = ({ post }) => {
@@ -23,6 +24,10 @@ const CaseItem = ({ post }) => {
       </Link>
     </div>
   )
+}
+
+CaseItem.propTypes = {
+  post: PropTypes.any,
 }
 
 export default CaseItem

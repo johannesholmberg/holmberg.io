@@ -2,10 +2,6 @@
   "env": {
     "es6": true
   },
-  "globals": {
-    "graphql": false,
-    "require": false
-  },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -17,6 +13,12 @@
   },
   "parserOptions": {
     "sourceType": "module"
+  },
+  "globals": {
+    "graphql": false,
+    "require": false,
+    "module": false,
+    "exports": false
   },
   "plugins": ["react"]
 }

@@ -1,7 +1,9 @@
+/* global __dirname */
 module.exports = {
   siteMetadata: {
     name: 'Johannes Holmberg',
-    description: 'Johannes Holmberg is a frontend designer in Basel, Switzerland.',
+    description:
+      'Johannes Holmberg is a frontend designer in Basel, Switzerland.',
     siteUrl: `https://holmberg.io`,
   },
   plugins: [
@@ -14,14 +16,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-20488297-3",
+        trackingId: 'UA-20488297-3',
         head: true,
       },
     },
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/assets/icons/favicon.png",
+        logo: './src/assets/icons/favicon.png',
         injectHTML: true,
         icons: {
           android: true,
@@ -32,9 +34,9 @@ module.exports = {
           firefox: true,
           twitter: false,
           yandex: false,
-          windows: false
-        }
-      }
+          windows: false,
+        },
+      },
     },
     `gatsby-transformer-sharp`,
     {
@@ -44,22 +46,22 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
-            }
+              classPrefix: 'language-',
+            },
           },
           {
             resolve: `gatsby-remark-embed-youtube`,
             options: {
               width: 1600,
               height: 900,
-            }
+            },
           },
           {
             resolve: `gatsby-remark-embed-video`,
             options: {
               width: 1600,
               height: 900,
-            }
+            },
           },
           {
             resolve: `gatsby-remark-images`,
@@ -72,21 +74,21 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-responsive-iframe`,
         ],
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: 'src',
-        path: `${__dirname}/src/`
-      }
+        path: `${__dirname}/src/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: 'img',
-        path: `${__dirname}/src/assets/images/`
-      }
+        path: `${__dirname}/src/assets/images/`,
+      },
     },
   ],
-};
+}

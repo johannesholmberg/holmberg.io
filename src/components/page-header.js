@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
 
 const PageHeader = ({ title, description, category }) => {
   function capitalizeFirstLetter(string) {
@@ -26,6 +26,12 @@ const PageHeader = ({ title, description, category }) => {
       )}
     </header>
   )
+}
+
+PageHeader.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  category: PropTypes.string,
 }
 
 export default PageHeader

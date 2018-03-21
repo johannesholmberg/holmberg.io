@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 const ArticleItem = ({ post }) => {
@@ -29,6 +30,10 @@ const ArticleItem = ({ post }) => {
       </p>
     </li>
   )
+}
+
+ArticleItem.propTypes = {
+  post: PropTypes.any,
 }
 
 export default ArticleItem

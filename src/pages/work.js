@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import CaseItem from '../components/case-item'
 import PageHeader from '../components/page-header'
@@ -7,16 +8,22 @@ const WorkPage = ({ data }) => (
   <section>
     <Helmet
       title={`Work – ${data.site.siteMetadata.name}`}
-      meta={[{ name: 'description', content: 'Project and case studies.' }]}
+      meta={[
+        { name: 'description', content: 'Project and case studies.' },
+      ]}
     />
     <PageHeader title="Work" />
     {data.allMarkdownRemark.edges.map(({ node }) => (
-      <div>
-        <CaseItem key={node.id} post={node} />
+      <div key={node.id}>
+        <CaseItem post={node} />
       </div>
     ))}
   </section>
 )
+
+WorkPage.propTypes = {
+  data: PropTypes.any,
+}
 
 export default WorkPage
 

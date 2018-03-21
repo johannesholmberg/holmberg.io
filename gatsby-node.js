@@ -57,21 +57,18 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       }
     `).then(result => {
-
       if (result.errors) {
         return Promise.reject(result.errors)
       }
 
-      const posts = result.data.allMarkdownRemark.edges;
-
-      //createTagPages(createPage, posts);
+      const posts = result.data.allMarkdownRemark.edges
 
       posts.forEach(({ node }) => {
-        let templatePath = './src/templates/post.js';
+        let templatePath = './src/templates/post.js'
         if (node.frontmatter.layout === 'page') {
-          templatePath = './src/templates/page.js';
+          templatePath = './src/templates/page.js'
         } else if (node.frontmatter.layout === 'case') {
-          templatePath = './src/templates/case.js';
+          templatePath = './src/templates/case.js'
         }
 
         createPage({
@@ -81,9 +78,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             slug: node.fields.slug,
           },
         })
-
       })
-      resolve();
+      resolve()
     })
   })
 }

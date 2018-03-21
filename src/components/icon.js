@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Icon = ({ id }) => (
   <span className="svg-icon">
@@ -7,5 +8,9 @@ const Icon = ({ id }) => (
     </svg>
   </span>
 )
+
+Icon.propTypes = {
+  id: PropTypes.string,
+}
 
 export default Icon
