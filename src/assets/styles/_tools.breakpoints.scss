@@ -2,26 +2,16 @@
 * @breakpoint
 * Mixin for creating a breakpoint directive in context to the selector
 */
-@mixin breakpoint(
-  $point
-) {
-  @if $point ==
-    mobile
-  {
+@mixin breakpoint($point) {
+  @if $point == mobile {
     @media (min-width: 36em) {
       @content;
     }
-  } @else if
-    $point ==
-    tablet
-  {
+  } @else if $point == tablet {
     @media (min-width: 58em) {
       @content;
     }
-  } @else if
-    $point ==
-    desktop
-  {
+  } @else if $point == desktop {
     @media (min-width: 80em) {
       @content;
     }
