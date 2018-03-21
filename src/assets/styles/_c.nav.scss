@@ -3,7 +3,7 @@
   text-align: right;
   margin-left: 2em;
 
-  @supports(display: grid) {
+  @supports (display: grid) {
     grid-row: 1;
     grid-column: 2;
   }
@@ -22,29 +22,25 @@
 .nav-global__link {
   font-size: 1.2em;
   display: inline-block;
-  padding: .05em .5em .1em;
-  margin: .2em 0;
+  padding: 0.05em 0.5em 0.1em;
+  margin: 0.2em 0;
   font-weight: 600;
-  box-shadow: 0 0 0 0 rgba(0,0,0,0.20);
-  transition:
-    transform .4s cubic-bezier(0.175, 0.885, 0.320, 1.275),
-    box-shadow .3s ease-in-out,
-    background-color .2s ease-in-out,
-    color .5s ease-in-out;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.3s ease-in-out, background-color 0.2s ease-in-out,
+    color 0.5s ease-in-out;
 
   @include breakpoint(tablet) {
     font-size: 1.5em;
-    margin: .4em 0;
-    padding: .2em .6em .3em .5em;
-    transform: translateX(-.6em);
+    margin: 0.4em 0;
+    padding: 0.2em 0.6em 0.3em 0.5em;
+    transform: translateX(-0.6em);
   }
 
   &--active,
   &:hover,
   &:focus {
     color: #fff;
-    box-shadow:
-      12px 14px 30px 0 rgba(0,0,0,0.20),
-      inset 0 -2em #222;
+    box-shadow: 12px 14px 30px 0 rgba(0, 0, 0, 0.2), inset 0 -2em #222;
   }
 }

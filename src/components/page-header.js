@@ -1,38 +1,31 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const PageHeader = ({
-  title,
-  description,
-  category
-}) => {
-
+const PageHeader = ({ title, description, category }) => {
   function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
+    return string.charAt(0).toUpperCase() + string.slice(1)
   }
 
   return (
     <header className="page-header">
-      <h1 className="page-header__title">
-        { title }
-      </h1>
-      { description &&
+      <h1 className="page-header__title">{title}</h1>
+      {description && (
         <p className="page-header__subtitle">
-          { description }
+          {description}
 
-          { category &&
-            <span> – <span className="page-header__category">
-                { capitalizeFirstLetter(category) }
+          {category && (
+            <span>
+              {' '}
+              –{' '}
+              <span className="page-header__category">
+                {capitalizeFirstLetter(category)}
               </span>
             </span>
-          }
+          )}
         </p>
-      }
+      )}
     </header>
   )
 }
 
-export default PageHeader;
-
-
-
+export default PageHeader

@@ -5,7 +5,8 @@ title: "About"
 
 <figure>
 
-  ![Johannes](johannes.jpg)
+![Johannes](johannes.jpg)
+
 </figure>
 
 ## About me
@@ -17,17 +18,15 @@ I’ve been working on the web for the last 10 years, designing and developing u
 
 My services include interaction design, information architecture and front-end development. I work together with teams from companies all over the world to provide responsive and optimized user interfaces.
 
-
-
-
 ## About the site
+
 This website was made in the purpose of creating a digital home to collect the writing and the work I do. The last couple of years I have downsized on my social media appearance and wanted to have a simple home where I can experiment at my own pace.
 
-- The website is powered by [Gatsby](https://www.gatsbyjs.org/)
-- Currently hosted at [Netlify](netlify.com)
-- Hand coded with HTML and CSS
-- No frameworks were used in the creation of this site
-- SASS helps with CSS maintenance
-- Profile photo taken by [Erik Carlsson](http://erikcarlsson.se/)
+* The website is powered by [Gatsby](https://www.gatsbyjs.org/)
+* Currently hosted at [Netlify](netlify.com)
+* Hand coded with HTML and CSS
+* No frameworks were used in the creation of this site
+* SASS helps with CSS maintenance
+* Profile photo taken by [Erik Carlsson](http://erikcarlsson.se/)
 
 I see this website as my playground so I don’t always worry how it looks across various browsers. But I’m keen about accessibility and usability issues so if you find something I might have missed, please let me know.

@@ -1,0 +1,22 @@
+{
+  "env": {
+    "es6": true
+  },
+  "globals": {
+    "graphql": false,
+    "require": false
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["react"]
+}

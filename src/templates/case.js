@@ -1,33 +1,27 @@
-import React, { Component } from 'react';
-import Helmet from 'react-helmet';
-import Img from "gatsby-image";
-import AuthorCard from "../components/author-card";
-import PageHeader from "../components/page-header";
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
+import PageHeader from '../components/page-header'
 
 export default class CasePage extends Component {
   render() {
-    const { data } = this.props;
-    const { markdownRemark: post } = data;
+    const { data } = this.props
+    const { markdownRemark: post } = data
     const {
       title,
-      date,
       image,
       description,
       role,
       website,
       meta,
-      output,
       techniques,
       client,
-    } = post.frontmatter;
+    } = post.frontmatter
 
     return (
       <article>
         <Helmet
           title={`${title} – ${data.site.siteMetadata.name}`}
-          meta={[
-            { name: 'description', content: post.excerpt },
-          ]}
+          meta={[{ name: 'description', content: post.excerpt }]}
         />
         <PageHeader title={title} description={description} />
 
@@ -44,33 +38,32 @@ export default class CasePage extends Component {
         </figure>
 
         <div className="main-content">
-          <div dangerouslySetInnerHTML={{
-            __html: post.html
-          }} />
+          <div
+            dangerouslySetInnerHTML={{
+              __html: post.html,
+            }}
+          />
           <aside className="sidebar">
             <ul className="sidebar__meta">
               <li className="sidebar__meta-item">
-                <strong>Production:</strong> { meta }
-                </li>
-              <li className="sidebar__meta-item">
-                <strong>Role:</strong> { role }
+                <strong>Production:</strong> {meta}
               </li>
               <li className="sidebar__meta-item">
-                <strong>Techniques:</strong> { techniques }
+                <strong>Role:</strong> {role}
               </li>
               <li className="sidebar__meta-item">
-                <strong>Client:</strong> { client }
+                <strong>Techniques:</strong> {techniques}
+              </li>
+              <li className="sidebar__meta-item">
+                <strong>Client:</strong> {client}
               </li>
               <li className="sidebar__meta-item">
                 <strong>Website: </strong>
-                <a href={ website }>
-                  { website }
-                </a>
+                <a href={website}>{website}</a>
               </li>
             </ul>
           </aside>
         </div>
-
       </article>
     )
   }
@@ -83,11 +76,7 @@ export const caseQuery = graphql`
         name
       }
     }
-    markdownRemark(fields: {
-      slug: {
-        eq: $slug
-      }
-    }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
       frontmatter {
@@ -104,4 +93,4 @@ export const caseQuery = graphql`
       }
     }
   }
-`;
+`

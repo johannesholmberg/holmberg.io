@@ -1,5 +1,5 @@
 * {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 ::-moz-selection {
@@ -20,11 +20,19 @@ nav ol {
   list-style: none;
 }
 
-audio, canvas, img, svg, video {
+audio,
+canvas,
+img,
+svg,
+video {
   vertical-align: middle;
 }
 
-img, video, object, svg, iframe {
+img,
+video,
+object,
+svg,
+iframe {
   max-width: 100%;
   border: none;
 }

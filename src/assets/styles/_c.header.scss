@@ -1,7 +1,7 @@
 .header-global {
   margin-bottom: 1em;
 
-  @supports(display: grid) {
+  @supports (display: grid) {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
@@ -21,7 +21,7 @@
   float: left;
   width: 50%;
 
-  @supports(display: grid) {
+  @supports (display: grid) {
     float: none;
     width: auto;
   }
@@ -32,7 +32,7 @@
 
   @include breakpoint(25em) {
     font-size: 2.4em;
-    margin-top: .2em;
+    margin-top: 0.2em;
   }
 
   span {
@@ -40,7 +40,7 @@
   }
 
   span:last-child {
-    margin-left: .75em;
+    margin-left: 0.75em;
     transform: translateY(-5px);
   }
 }
@@ -52,4 +52,3 @@
   grid-column: 1;
   max-width: 16em;
 }
-

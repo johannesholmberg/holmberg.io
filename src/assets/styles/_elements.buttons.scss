@@ -9,10 +9,10 @@ button,
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: .5em 4%;
+  padding: 0.5em 4%;
   text-align: center;
-  letter-spacing: .04em;
-  transition: all .2s ease-in-out;
+  letter-spacing: 0.04em;
+  transition: all 0.2s ease-in-out;
 
   &--primary {
     background-color: #222;
@@ -22,8 +22,7 @@ button,
     &:focus {
       background-color: #333;
       color: #fff;
-      box-shadow: 12px 14px 30px 0 rgba(0,0,0,0.20);
+      box-shadow: 12px 14px 30px 0 rgba(0, 0, 0, 0.2);
     }
   }
 }
-

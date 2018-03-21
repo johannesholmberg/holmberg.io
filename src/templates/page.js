@@ -1,25 +1,23 @@
-import React, { Component } from 'react';
-import Helmet from 'react-helmet';
-import AuthorCard from "../components/author-card";
-import PageHeader from "../components/page-header";
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
+import PageHeader from '../components/page-header'
 
 export default class PagePage extends Component {
   render() {
-    const { data } = this.props;
-    const { markdownRemark: post } = data;
-    const { title, date } = post.frontmatter;
+    const { data } = this.props
+    const { markdownRemark: post } = data
+    const { title } = post.frontmatter
     return (
       <article>
         <Helmet
           title={`${title} – ${data.site.siteMetadata.name}`}
-          meta={[
-            { name: 'description', content: post.excerpt },
-          ]}
+          meta={[{ name: 'description', content: post.excerpt }]}
         />
         <PageHeader title={title} />
         <div className="main-content">
-          <div dangerouslySetInnerHTML={{
-              __html: post.html
+          <div
+            dangerouslySetInnerHTML={{
+              __html: post.html,
             }}
           />
         </div>
@@ -35,11 +33,7 @@ export const pageQuery = graphql`
         name
       }
     }
-    markdownRemark(fields: {
-      slug: {
-        eq: $slug
-      }
-    }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
       frontmatter {
@@ -48,4 +42,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

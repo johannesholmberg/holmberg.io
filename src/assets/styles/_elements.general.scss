@@ -1,13 +1,10 @@
 html {
   color: $text;
-  font-size: .9em;
-
-
+  font-size: 0.9em;
   @include breakpoint(38em) {
     font-size: 1em;
-    font-size: calc( 14px + 6 * ((100vw - 500px) / 1500));
+    font-size: calc(14px + 6 * ((100vw - 500px) / 1500));
   }
-
   @include breakpoint(71em) {
     font-size: 1em;
   }
@@ -18,7 +15,7 @@ button,
 input,
 optgroup,
 select,
-textarea  {
+textarea {
   font-family: $fontBody;
   line-height: 1.5;
 }
@@ -39,7 +36,7 @@ ul {
 }
 
 li {
-  margin: .35em 0;
+  margin: 0.35em 0;
 }
 
 strong {
@@ -66,23 +63,21 @@ figcaption {
 
 hr {
   line-height: 1;
-  margin: .9em 0 1.5em;
+  margin: 0.9em 0 1.5em;
   font-size: 3em;
   border: 0;
-
   &:after {
     font-family: sans-serif;
     content: '\00b7\00b7\00b7';
     color: #bbb;
-    letter-spacing: .5em;
+    letter-spacing: 0.5em;
   }
 }
 
 code {
   background: #eee;
-  font-size: .85em;
-  padding: .2em .3em;
-  border-radius: .15em;
+  font-size: 0.85em;
+  padding: 0.2em 0.3em;
+  border-radius: 0.15em;
   font-size: 90%;
 }
-

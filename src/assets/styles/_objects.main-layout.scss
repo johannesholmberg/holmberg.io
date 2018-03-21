@@ -8,7 +8,7 @@
   @include breakpoint(tablet) {
     padding: 6% 0 6% 3em;
 
-    @supports(display: grid) {
+    @supports (display: grid) {
       display: grid;
       grid-template-columns: 22em 1fr;
       align-items: start;
@@ -16,16 +16,12 @@
   }
 }
 
-
-
-
 .main-content {
-
   @include breakpoint(tablet) {
     float: left;
     width: 70%;
 
-    @supports(display: grid) {
+    @supports (display: grid) {
       float: none;
       width: auto;
     }
@@ -33,7 +29,6 @@
 }
 
 .main-content {
-
   > div > *,
   .footer-content {
     max-width: 50rem;
@@ -53,7 +48,7 @@
   }
 
   blockquote {
-    border-left: .25em solid #ddd;
+    border-left: 0.25em solid #ddd;
     margin: 1.5em 0;
     font-style: italic;
     position: relative;

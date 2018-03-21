@@ -1,14 +1,13 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react'
+import Link from 'gatsby-link'
 
 const Tags = ({ pathContext }) => {
-  const { posts, tagName } = pathContext;
+  const { posts, tagName } = pathContext
 
   if (posts) {
     return (
       <div>
         Posts about {tagName}
-
         <ul>
           {posts.map(post => {
             return (
@@ -25,4 +24,4 @@ const Tags = ({ pathContext }) => {
   }
 }
 
-export default Tags;
+export default Tags

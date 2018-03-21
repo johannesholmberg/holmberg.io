@@ -4,7 +4,6 @@
 %resetLinkStyle {
   box-shadow: none;
 
-
   &:hover,
   &:focus {
     box-shadow: none;
@@ -12,14 +11,13 @@
   }
 }
 
-
 /*
  * Clearfix: contain floats
  */
 
 %clearfix:before,
 %clearfix:after {
-  content: " "; /* 1 */
+  content: ' '; /* 1 */
   display: table; /* 2 */
 }
 

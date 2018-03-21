@@ -1,24 +1,20 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet';
-import Img from "gatsby-image";
+import Helmet from 'react-helmet'
 import CaseItem from '../components/case-item'
-import PageHeader from "../components/page-header"
+import PageHeader from '../components/page-header'
 
 const WorkPage = ({ data }) => (
   <section>
     <Helmet
       title={`Work – ${data.site.siteMetadata.name}`}
-      meta={[
-        { name: 'description', content: "Project and case studies." },
-      ]}
+      meta={[{ name: 'description', content: 'Project and case studies.' }]}
     />
     <PageHeader title="Work" />
-    {data.allMarkdownRemark.edges.map(({node}) =>
-    <div>
-      <CaseItem key={node.id} post={node} />
-    </div>
-    )}
+    {data.allMarkdownRemark.edges.map(({ node }) => (
+      <div>
+        <CaseItem key={node.id} post={node} />
+      </div>
+    ))}
   </section>
 )
 
@@ -32,16 +28,8 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {
-        frontmatter: {
-          layout: {
-            eq: "case"
-          }
-        }
-      }
-      sort: {
-        fields: [frontmatter___date], order: DESC
-      }
+      filter: { frontmatter: { layout: { eq: "case" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {
@@ -60,6 +48,5 @@ export const query = graphql`
         }
       }
     }
-
   }
-`;
+`

@@ -1,69 +1,51 @@
-import React, { Component } from 'react';
-import Helmet from 'react-helmet';
-import AuthorCard from "../components/author-card";
-import PageHeader from "../components/page-header";
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
+import PageHeader from '../components/page-header'
 import Icon from '../components/icon'
-require("prismjs/themes/prism-solarizedlight.css");
+require('prismjs/themes/prism-solarizedlight.css')
 
 export default class PostPage extends Component {
-
   render() {
-    const { data } = this.props;
-    const { location } = this.props;
-    const { markdownRemark: post } = data;
-    const {
-      title,
-      date,
-      category,
-      ref_url
-    } = post.frontmatter;
+    const { data } = this.props
+    const { location } = this.props
+    const { markdownRemark: post } = data
+    const { title, date, category, ref_url } = post.frontmatter
 
-    let canonical;
+    let canonical
     if (category == 'links') {
-      canonical = ref_url;
+      canonical = ref_url
     } else {
-      canonical = `${data.site.siteMetadata.siteUrl}${location.pathname}`;
+      canonical = `${data.site.siteMetadata.siteUrl}${location.pathname}`
     }
 
     return (
       <article>
         <Helmet
           title={`${title} – ${data.site.siteMetadata.name}`}
-          link={[
-            { rel: 'canonical', href: canonical},
-          ]}
-          meta={[
-            { name: 'description', content: post.excerpt },
-          ]}
+          link={[{ rel: 'canonical', href: canonical }]}
+          meta={[{ name: 'description', content: post.excerpt }]}
         />
 
-        <PageHeader
-          title={title}
-          description={date}
-          category={category}
-        />
+        <PageHeader title={title} description={date} category={category} />
 
         <div className="main-content">
           <div
             dangerouslySetInnerHTML={{
-              __html: post.html
+              __html: post.html,
             }}
           />
 
-          { category == "links" &&
+          {category == 'links' && (
             <section className="footer-content">
               <p>
-                 <a
-                  href={ ref_url }
-                  className="button button--primary">
+                <a href={ref_url} className="button button--primary">
                   <Icon id="link" />
                   Permalink
                 </a>
               </p>
             </section>
-          }
+          )}
         </div>
-
       </article>
     )
   }
@@ -77,11 +59,7 @@ export const postQuery = graphql`
         siteUrl
       }
     }
-    markdownRemark(fields: {
-      slug: {
-        eq: $slug
-      }
-    }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
       frontmatter {
@@ -92,4 +70,4 @@ export const postQuery = graphql`
       }
     }
   }
-`;
+`

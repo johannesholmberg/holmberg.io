@@ -2,11 +2,10 @@
   grid-column: 2 / -1;
   padding: 0 0 3em;
 
-
   &:before {
     font-family: sans-serif;
     content: '\00b7\00b7\00b7';
-    letter-spacing: .5em;
+    letter-spacing: 0.5em;
     font-size: 2em;
   }
 }

@@ -8,7 +8,6 @@ The time has come. You know that time when you have too many ideas boiling aroun
 
 Anyway, those ideas had to do with different parts of this site and I couldn’t put up with it any longer. I wanted to try out some new things and fix some others. That’s why I sat down doing some coding this weekend.
 
-
 ## A new masthead
 
 The masthead is probably what’s been bothering me the most. I thought it took up way too much vertical space. On laptop screens for instance, which don’t have so much vertical space, the header would take up almost half the screen estate. It was completely unneccessary and needed to be adressed.
@@ -23,20 +22,17 @@ I removed the whole title section for the page and moved it up to sit on top of 
 
 ![Individual headers](updates-on-the-site-2.jpg)
 
-
 ## Compress that navigation
 
 For plain content pages (cases, articles, book entries etc.) I remove that title section and compress the navigation again, since the content is the most important thing on these pages.
 
 ![Mobile navigation](updates-on-the-site-3.jpg)
 
-
 ## Show what you can
 
 I’ve never been a big fan of the hamburger menu so I wanted to try something else for the navigation on mobile/narrow screens. Instead of just hiding everything away in a drawer, I show as much as I can. So for example on very narrow screens, maybe 2 items can fit for the navigation. When the screen gets wider, maybe 3 can fit, and then 4 and so on. In addition to this there is always a link with the label “Menu” visible, which will take you to the full menu in the footer.
 
 ![Mobile navigation](updates-on-the-site-4.jpg)
-
 
 ## Conclusion
 

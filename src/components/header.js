@@ -1,10 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Navigation from './navigation'
 
 const Header = () => (
   <header className="header-global">
-
     <div className="header-global__text">
       <h1 className="header-global__title">
         <span>johannes</span>

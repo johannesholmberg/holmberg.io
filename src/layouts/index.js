@@ -6,18 +6,22 @@ import Typekit from 'react-typekit'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Icons from '../components/icons'
-import Icon from '../components/icon'
 
 import '../assets/styles/style.scss'
 
 const TemplateWrapper = ({ children, data }) => (
   <div className="page">
     <Typekit kitId="fyg1ntw" />
-    <Helmet
-      title={`Home – ${data.site.siteMetadata.name}`}
-    />
+    <Helmet title={`Home – ${data.site.siteMetadata.name}`} />
 
-    <div style={{ height: '0', width: '0', position: 'absolute', visibility: 'hidden', }}>
+    <div
+      style={{
+        height: '0',
+        width: '0',
+        position: 'absolute',
+        visibility: 'hidden',
+      }}
+    >
       <Icons />
     </div>
 
@@ -42,17 +46,12 @@ TemplateWrapper.propTypes = {
 export default TemplateWrapper
 
 export const query = graphql`
-query LayoutQuery {
-  site {
-    siteMetadata {
-      name
-      description
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        name
+        description
+      }
     }
   }
-  # background: imageSharp(id: {regex: "/bg.jpeg/"}) {
-  #   sizes(maxWidth: 1240) {
-  #     ...GatsbyImageSharpSizes
-  #   }
-  # }
-}
-`;
+`
