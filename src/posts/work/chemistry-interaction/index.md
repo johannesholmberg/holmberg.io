@@ -2,7 +2,7 @@
 layout: case
 date: "2016-06"
 title: "Chemistry Interaction"
-image: "chemistry-interaction"
+featuredImage: "./chemistry-interaction.jpg"
 description: "A responsive makeover with a customized CMS"
 role: "Developer"
 website: "http://chemistryinteraction.co.nz"

@@ -2,7 +2,7 @@
 layout: case
 date: "2012-12"
 title: "LCC Compliance Application"
-image: "compliance"
+featuredImage: "./compliance.jpg"
 description: "“A more inviting, user-friendly system to handle”"
 role: "Designer, Front-end Developer"
 meta: "August–December, 2012"

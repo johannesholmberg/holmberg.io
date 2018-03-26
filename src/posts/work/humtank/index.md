@@ -2,7 +2,7 @@
 layout: case
 date: "2015-06"
 title: "Humtank.se"
-image: "humtank"
+featuredImage: "./humtank.jpg"
 description: "A responsive WordPress theme"
 role: "Developer"
 website: "http://humtank.se"

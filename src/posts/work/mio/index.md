@@ -2,7 +2,7 @@
 layout: case
 date: "2013-12-10"
 title: "Mio.se"
-image: "mio"
+featuredImage: "./mio.jpg"
 description: "A whole new responsive e-commerce experience"
 role: "Front-end Developer"
 website: "https://www.mio.se/"
@@ -14,4 +14,3 @@ client: "Mio, in collaboration with Osynlig, Valtech and Enferno."
 I got the amazing opportunity to work on the frontend for Mio’s new e-commerce website. It was a complete overhaul with a responsive foundation. During the process I worked tightly with a team of skilled engineers and backend developers from [Valtech](http://www.valtech.com/) and [Enferno](http://www.enferno.se/).
 
 ![Mio](mio-inline-1.jpg)
-

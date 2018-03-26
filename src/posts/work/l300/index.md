@@ -2,7 +2,7 @@
 layout: case
 date: "2014-01"
 title: "L300"
-image: "l300"
+featuredImage: "./l300.jpg"
 description: "“A website that works like stretch pants”"
 role: "Developer"
 website: "http://l300.se"

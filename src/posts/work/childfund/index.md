@@ -2,7 +2,7 @@
 layout: case
 date: "2016-05"
 title: "ChildFund"
-image: "childfund"
+featuredImage: "./childfund.jpg"
 description: "A donation portal with performance in mind"
 role: "Developer"
 website: "https://www.childfund.org.nz/donate"

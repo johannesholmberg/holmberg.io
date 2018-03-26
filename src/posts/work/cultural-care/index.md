@@ -2,7 +2,7 @@
 layout: case
 date: "2012-04"
 title: "Cultural Care"
-image: "culturalcare"
+featuredImage: "./culturalcare.jpg"
 description: "A responsive system for twenty global websites"
 role: "Designer, Front-end Developer"
 website: "http://culturalcare.se"

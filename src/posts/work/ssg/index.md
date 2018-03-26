@@ -2,7 +2,7 @@
 layout: case
 date: "2014-05"
 title: "SSG - Mobile Services"
-image: "ssg"
+featuredImage: "./ssg.jpg"
 description: "A first responsive step."
 role: Front-end Developer
 website: http://ssg.se

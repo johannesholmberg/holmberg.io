@@ -2,7 +2,7 @@
 layout: case
 date: "2016-02"
 title: "Hälsokällan"
-image: "halsokallan"
+featuredImage: "./halsokallan.jpg"
 description: "A custom tailored WordPress theme"
 role: "Developer"
 website: "http://halsokallan.eu"

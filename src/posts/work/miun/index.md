@@ -2,7 +2,7 @@
 layout: case
 date: "2014-09"
 title: "Mid Sweden University"
-image: "miun"
+featuredImage: "./miun.jpg"
 description: "The responsive university"
 role: "Front-end Developer"
 website: "https://miun.se/"
@@ -26,4 +26,4 @@ In architecting the front-end, I tried as usual to break down the design into as
 
 It was a project that took roughly 9 months from start to first release. I got to work with a bunch of smart people and had to try out environments I wasn't used to so I learned a ton from this project.
 
-[KnowIT]: http://www.knowit.se/
+[knowit]: http://www.knowit.se/

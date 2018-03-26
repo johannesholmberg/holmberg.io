@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import PageHeader from '../components/page-header'
+import Img from 'gatsby-image'
 
 export default class CasePage extends Component {
   static get propTypes() {
@@ -15,7 +16,7 @@ export default class CasePage extends Component {
     const { markdownRemark: post } = data
     const {
       title,
-      image,
+      featuredImage,
       description,
       role,
       website,
@@ -31,17 +32,17 @@ export default class CasePage extends Component {
           meta={[{ name: 'description', content: post.excerpt }]}
         />
         <PageHeader title={title} description={description} />
-
+        <Img sizes={featuredImage.childImageSharp.sizes} />
         <figure>
-          <img
-            src={`https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image}.jpg`}
+          {/* <img
+            src={`https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image}`}
             srcSet={`
-              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_400/v1520835525/work/${image}.jpg 400w,
-              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_800/v1520835525/work/${image}.jpg 800w,
-              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image}.jpg 1400w
+              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_400/v1520835525/work/${image} 400w,
+              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_800/v1520835525/work/${image} 800w,
+              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image} 1400w
             `}
             alt={title}
-          />
+          /> */}
         </figure>
 
         <div className="main-content">
@@ -76,7 +77,7 @@ export default class CasePage extends Component {
   }
 }
 
-export const caseQuery = graphql`
+export let caseQuery = graphql`
   query caseQuery($slug: String!) {
     site {
       siteMetadata {
@@ -89,7 +90,13 @@ export const caseQuery = graphql`
       frontmatter {
         title
         date
-        image
+        featuredImage {
+          childImageSharp {
+            sizes(maxWidth: 1000) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
         description
         role
         website

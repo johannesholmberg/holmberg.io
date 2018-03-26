@@ -13,6 +13,7 @@ const WorkPage = ({ data }) => (
       ]}
     />
     <PageHeader title="Work" />
+
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
         <CaseItem post={node} />
@@ -34,6 +35,7 @@ export const query = graphql`
         name
       }
     }
+
     allMarkdownRemark(
       filter: { frontmatter: { layout: { eq: "case" } } }
       sort: { fields: [frontmatter___date], order: DESC }
@@ -45,7 +47,13 @@ export const query = graphql`
             layout
             title
             date(formatString: "MMMM DD YYYY")
-            image
+            featuredImage {
+              childImageSharp {
+                sizes(maxWidth: 1000) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
           html
           excerpt
