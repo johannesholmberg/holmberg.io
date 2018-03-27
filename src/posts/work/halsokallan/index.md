@@ -1,15 +1,13 @@
 ---
 layout: case
-date: "2016-02"
+date: "2016"
 title: "Hälsokällan"
 featuredImage: "./halsokallan.jpg"
 description: "A custom tailored WordPress theme"
-role: "Developer"
-website: "http://halsokallan.eu"
-meta: "January–February, 2016"
-output: "WordPress integration, Front-end development, Responsive platform"
-techniques: "HTML, CSS, PHP, WordPress, JavaScript, jQuery, Gulp, Sass"
+role: "Frontend Developer"
+tech: "HTML, CSS, PHP, WordPress, JavaScript, jQuery, Gulp, Sass"
 client: "Hälsokällan, in collaboration with Osynlig"
+website: "http://halsokallan.eu"
 ---
 
 Hälsokällan is a service company in Sweden offering courses for health and mindfulness. They needed a new platform for showcasing what they do. In collaboration with Osynlig I was working on this project as front-end developer / WordPress implementor.

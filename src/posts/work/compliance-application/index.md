@@ -1,13 +1,11 @@
 ---
 layout: case
-date: "2012-12"
+date: "2012"
 title: "LCC Compliance Application"
 featuredImage: "./compliance.jpg"
 description: "“A more inviting, user-friendly system to handle”"
-role: "Designer, Front-end Developer"
-meta: "August–December, 2012"
-output: "Front-end code, Content structure, Responsive platform"
-techniques: "HTML, CSS, JavaScript, jQuery"
+role: "Frontend Developer"
+tech: "HTML, CSS, JavaScript, jQuery"
 client: "Cultural Care"
 ---
 

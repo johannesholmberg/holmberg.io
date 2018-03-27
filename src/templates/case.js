@@ -19,10 +19,9 @@ export default class CasePage extends Component {
       featuredImage,
       description,
       role,
-      website,
-      meta,
-      techniques,
+      tech,
       client,
+      website,
     } = post.frontmatter
 
     return (
@@ -32,17 +31,8 @@ export default class CasePage extends Component {
           meta={[{ name: 'description', content: post.excerpt }]}
         />
         <PageHeader title={title} description={description} />
-        <Img sizes={featuredImage.childImageSharp.sizes} />
         <figure>
-          {/* <img
-            src={`https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image}`}
-            srcSet={`
-              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_400/v1520835525/work/${image} 400w,
-              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_800/v1520835525/work/${image} 800w,
-              https://res.cloudinary.com/johannesholmberg/image/upload/c_scale,w_1400/v1520835525/work/${image} 1400w
-            `}
-            alt={title}
-          /> */}
+          <Img sizes={featuredImage.childImageSharp.sizes} />
         </figure>
 
         <div className="main-content">
@@ -54,13 +44,10 @@ export default class CasePage extends Component {
           <aside className="sidebar">
             <ul className="sidebar__meta">
               <li className="sidebar__meta-item">
-                <strong>Production:</strong> {meta}
-              </li>
-              <li className="sidebar__meta-item">
                 <strong>Role:</strong> {role}
               </li>
               <li className="sidebar__meta-item">
-                <strong>Techniques:</strong> {techniques}
+                <strong>Tech:</strong> {tech}
               </li>
               <li className="sidebar__meta-item">
                 <strong>Client:</strong> {client}
@@ -89,7 +76,7 @@ export let caseQuery = graphql`
       excerpt
       frontmatter {
         title
-        date
+        description
         featuredImage {
           childImageSharp {
             sizes(maxWidth: 1000) {
@@ -97,13 +84,10 @@ export let caseQuery = graphql`
             }
           }
         }
-        description
         role
-        website
-        meta
-        output
-        techniques
+        tech
         client
+        website
       }
     }
   }

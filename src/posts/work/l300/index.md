@@ -1,14 +1,13 @@
 ---
 layout: case
-date: "2014-01"
+date: "2014"
 title: "L300"
 featuredImage: "./l300.jpg"
 description: "“A website that works like stretch pants”"
-role: "Developer"
-website: "http://l300.se"
-meta: "November, 2013–January, 2014"
-techniques: "HTML, CSS, PHP, WordPress, JavaScript, jQuery, Sass"
+role: "Frontend Developer"
+tech: "HTML, CSS, PHP, WordPress, JavaScript, jQuery, Sass"
 client: "L300, in collaboration with Osynlig"
+website: "http://l300.se"
 ---
 
 In early 2014 I got the chance to work on the new responsive website for L300. It was already built in WordPress and the challenge lay in taking the current code framework (which was a static layout) and convert it into a full-fledged responsive website.
