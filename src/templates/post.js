@@ -42,24 +42,23 @@ export default class PostPage extends Component {
           category={category}
         />
 
-        <div className="main-content">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: post.html,
-            }}
-          />
+        <div
+          className="content-wrap"
+          dangerouslySetInnerHTML={{
+            __html: post.html,
+          }}
+        />
 
-          {category == 'links' && (
-            <section className="footer-content">
-              <p>
-                <a href={ref_url} className="button button--primary">
-                  <Icon id="link" />
-                  Permalink
-                </a>
-              </p>
-            </section>
-          )}
-        </div>
+        {category == 'links' && (
+          <section className="footer-content">
+            <p>
+              <a href={ref_url} className="button button--primary">
+                <Icon id="link" />
+                Permalink
+              </a>
+            </p>
+          </section>
+        )}
       </article>
     )
   }

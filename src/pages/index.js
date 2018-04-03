@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => (
 
     <h1 className="c-home-section__title">Hello, welcome.</h1>
 
-    <div className="main-content">
+    <div className="content-wrap">
       <div>
         <p>
           I’m Johannes, a frontend designer located in beautiful Basel

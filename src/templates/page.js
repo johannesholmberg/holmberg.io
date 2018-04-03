@@ -21,13 +21,13 @@ export default class PagePage extends Component {
           meta={[{ name: 'description', content: post.excerpt }]}
         />
         <PageHeader title={title} />
-        <div className="main-content">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: post.html,
-            }}
-          />
-        </div>
+
+        <div
+          className="content-wrap"
+          dangerouslySetInnerHTML={{
+            __html: post.html,
+          }}
+        />
       </article>
     )
   }

@@ -1,0 +1,19 @@
+.layout-wrap {
+  max-width: 84em;
+  z-index: 2;
+  margin: 0 auto;
+  position: relative;
+  padding: 1em 5%;
+
+  @include breakpoint(tablet) {
+    padding: 6% 0 6% 3em;
+    display: flex;
+    flex-wrap: wrap;
+
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: 22em 1fr;
+      align-items: start;
+    }
+  }
+}

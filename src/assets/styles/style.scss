@@ -1,30 +1,38 @@
-@import 'settings.global';
+// Settings
+@import 's.global';
 
-@import 'tools.mixins';
-@import 'tools.styles';
-@import 'tools.breakpoints';
+// Tools
+@import 't.mixins';
+@import 't.styles';
+@import 't.breakpoints';
 
-@import 'generic.normalize';
-@import 'generic.reset';
-@import 'generic.box-sizing';
-@import 'generic.fonts';
-@import 'generic.icons';
+// Generic (Starts rendering CSS)
+@import 'g.box-sizing';
+@import 'g.fonts';
+@import 'g.normalize';
+@import 'g.reset';
 
-@import 'elements.general';
-@import 'elements.buttons';
-@import 'elements.headings';
-@import 'elements.links';
-@import 'elements.lists';
-@import 'elements.forms';
+// Elements
+@import 'e.base';
+@import 'e.buttons';
+@import 'e.elements';
+@import 'e.headings';
+@import 'e.links';
 
-@import 'objects.main-layout';
+// Objects
+@import 'o.content-wrap';
+@import 'o.layout-wrap';
 
-@import 'c.header';
-@import 'c.footer';
-@import 'c.nav';
-@import 'c.page-header';
+// Components
 @import 'c.article-item';
 @import 'c.case-item';
+@import 'c.footer';
+@import 'c.header';
+@import 'c.icon';
+@import 'c.main';
+@import 'c.nav';
+@import 'c.page-header';
 
+// Trumps
+@import 'trumps.overrides';
 @import 'trumps.utilities';
-@import 'trumps.vendor-extensions';

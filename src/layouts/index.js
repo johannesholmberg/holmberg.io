@@ -14,24 +14,26 @@ const TemplateWrapper = ({ children, data }) => (
     <Typekit kitId="fyg1ntw" />
     <Helmet title={`Home – ${data.site.siteMetadata.name}`} />
 
-    <div
-      style={{
-        height: '0',
-        width: '0',
-        position: 'absolute',
-        visibility: 'hidden',
-      }}
-    >
-      <Icons />
+    <div className="a11y">
+      <div
+        style={{
+          height: '0',
+          width: '0',
+          position: 'absolute',
+          visibility: 'hidden',
+        }}
+      >
+        <Icons />
+      </div>
+
+      <a href="#main" className="skip-content visuallyhidden">
+        Skip to content
+      </a>
     </div>
 
-    <a href="#main" className="skip-content visuallyhidden">
-      Skip to content
-    </a>
-
-    <div className="wrap">
+    <div className="layout-wrap">
       <Header />
-      <main id="main" className="main-layout">
+      <main id="main" className="main-global">
         {children()}
       </main>
       <Footer />

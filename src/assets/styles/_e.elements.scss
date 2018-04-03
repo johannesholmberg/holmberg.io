@@ -1,29 +1,3 @@
-html {
-  color: $text;
-  font-size: 0.9em;
-  @include breakpoint(38em) {
-    font-size: 1em;
-    font-size: calc(14px + 6 * ((100vw - 500px) / 1500));
-  }
-  @include breakpoint(71em) {
-    font-size: 1em;
-  }
-}
-
-body,
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: $fontBody;
-  line-height: 1.5;
-}
-
-body {
-  background-color: #fff;
-}
-
 p,
 ul {
   font-size: 1.375rem;
@@ -79,9 +53,5 @@ hr {
 }
 
 code {
-  background: #eee;
   font-size: 0.85em;
-  padding: 0.2em 0.3em;
-  border-radius: 0.15em;
-  font-size: 90%;
 }

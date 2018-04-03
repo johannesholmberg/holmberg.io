@@ -1,29 +1,22 @@
 .header-global {
   margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @supports (display: grid) {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    align-items: center;
   }
 
   @include breakpoint(tablet) {
     display: block;
     float: left;
-    width: 17em;
+    width: 22em;
+    padding-right: 5em;
     position: sticky;
     top: 4.5%;
     margin-bottom: 0;
-  }
-}
-
-.header-global__text {
-  float: left;
-  width: 50%;
-
-  @supports (display: grid) {
-    float: none;
-    width: auto;
   }
 }
 

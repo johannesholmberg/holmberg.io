@@ -1,12 +1,6 @@
 .nav-global {
-  float: right;
   text-align: right;
   margin-left: 2em;
-
-  @supports (display: grid) {
-    grid-row: 1;
-    grid-column: 2;
-  }
 
   @include breakpoint(tablet) {
     text-align: left;

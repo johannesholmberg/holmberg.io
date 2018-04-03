@@ -35,30 +35,29 @@ export default class CasePage extends Component {
           <Img sizes={featuredImage.childImageSharp.sizes} />
         </figure>
 
-        <div className="main-content">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: post.html,
-            }}
-          />
-          <aside className="sidebar">
-            <ul className="sidebar__meta">
-              <li className="sidebar__meta-item">
-                <strong>Role:</strong> {role}
-              </li>
-              <li className="sidebar__meta-item">
-                <strong>Tech:</strong> {tech}
-              </li>
-              <li className="sidebar__meta-item">
-                <strong>Client:</strong> {client}
-              </li>
-              <li className="sidebar__meta-item">
-                <strong>Website: </strong>
-                <a href={website}>{website}</a>
-              </li>
-            </ul>
-          </aside>
-        </div>
+        <div
+          className="content-wrap"
+          dangerouslySetInnerHTML={{
+            __html: post.html,
+          }}
+        />
+        <aside className="sidebar">
+          <ul className="sidebar__meta">
+            <li className="sidebar__meta-item">
+              <strong>Role:</strong> {role}
+            </li>
+            <li className="sidebar__meta-item">
+              <strong>Tech:</strong> {tech}
+            </li>
+            <li className="sidebar__meta-item">
+              <strong>Client:</strong> {client}
+            </li>
+            <li className="sidebar__meta-item">
+              <strong>Website: </strong>
+              <a href={website}>{website}</a>
+            </li>
+          </ul>
+        </aside>
       </article>
     )
   }

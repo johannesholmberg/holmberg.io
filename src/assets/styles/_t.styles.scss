@@ -1,0 +1,14 @@
+/*
+ * Reusable declaration styles
+ */
+
+// Link style
+%resetLinkStyle {
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+    color: inherit;
+  }
+}
