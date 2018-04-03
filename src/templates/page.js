@@ -17,7 +17,7 @@ export default class PagePage extends Component {
     return (
       <article>
         <Helmet
-          title={`${title} – ${data.site.siteMetadata.name}`}
+          title={`${title} – ${data.site.siteMetadata.title}`}
           meta={[{ name: 'description', content: post.excerpt }]}
         />
         <PageHeader title={title} />
@@ -37,7 +37,7 @@ export const pageQuery = graphql`
   query pageQuery($slug: String!) {
     site {
       siteMetadata {
-        name
+        title
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

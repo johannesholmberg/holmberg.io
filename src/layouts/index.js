@@ -12,7 +12,7 @@ import '../assets/styles/style.scss'
 const TemplateWrapper = ({ children, data }) => (
   <div className="page">
     <Typekit kitId="fyg1ntw" />
-    <Helmet title={`Home – ${data.site.siteMetadata.name}`} />
+    <Helmet title={`Home – ${data.site.siteMetadata.title}`} />
 
     <div className="a11y">
       <div
@@ -52,7 +52,7 @@ export const query = graphql`
   query LayoutQuery {
     site {
       siteMetadata {
-        name
+        title
         description
       }
     }

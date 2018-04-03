@@ -27,7 +27,7 @@ export default class CasePage extends Component {
     return (
       <article>
         <Helmet
-          title={`${title} – ${data.site.siteMetadata.name}`}
+          title={`${title} – ${data.site.siteMetadata.title}`}
           meta={[{ name: 'description', content: post.excerpt }]}
         />
         <PageHeader title={title} description={description} />
@@ -67,7 +67,7 @@ export let caseQuery = graphql`
   query caseQuery($slug: String!) {
     site {
       siteMetadata {
-        name
+        title
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

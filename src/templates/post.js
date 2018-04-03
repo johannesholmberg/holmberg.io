@@ -31,7 +31,7 @@ export default class PostPage extends Component {
     return (
       <article>
         <Helmet
-          title={`${title} – ${data.site.siteMetadata.name}`}
+          title={`${title} – ${data.site.siteMetadata.title}`}
           link={[{ rel: 'canonical', href: canonical }]}
           meta={[{ name: 'description', content: post.excerpt }]}
         />
@@ -68,7 +68,7 @@ export const postQuery = graphql`
   query BlogPostQuery($slug: String!) {
     site {
       siteMetadata {
-        name
+        title
         siteUrl
       }
     }

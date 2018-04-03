@@ -7,7 +7,7 @@ import PageHeader from '../components/page-header'
 const WorkPage = ({ data }) => (
   <section>
     <Helmet
-      title={`Work – ${data.site.siteMetadata.name}`}
+      title={`Work – ${data.site.siteMetadata.title}`}
       meta={[
         { name: 'description', content: 'Project and case studies.' },
       ]}
@@ -32,7 +32,7 @@ export const query = graphql`
   query workQuery {
     site {
       siteMetadata {
-        name
+        title
       }
     }
 

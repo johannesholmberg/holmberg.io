@@ -6,7 +6,7 @@ import ArticleItem from '../components/article-item'
 const IndexPage = ({ data }) => (
   <section>
     <Helmet
-      title={`Home – ${data.site.siteMetadata.name}`}
+      title={`Home – ${data.site.siteMetadata.title}`}
       meta={[
         {
           name: 'description',
@@ -62,7 +62,7 @@ export const indexQuery = graphql`
   query indexQuery {
     site {
       siteMetadata {
-        name
+        title
         description
       }
     }
