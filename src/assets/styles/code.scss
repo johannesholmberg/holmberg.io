@@ -53,6 +53,7 @@ pre[class*='language-'] {
 :not(pre) > code[class*='language-'] {
   padding: 0.15em;
   border-radius: 0.1em;
+  font-size: 80%;
 
   &:before,
   &:after {
