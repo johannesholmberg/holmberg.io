@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import PageHeader from '../components/page-header'
 import Icon from '../components/icon'
-require('prismjs/themes/prism-solarizedlight.css')
 
 export default class PostPage extends Component {
   static get propTypes() {
