@@ -20,7 +20,6 @@ export default class PagePage extends Component {
           title={`${title} – ${data.site.siteMetadata.title}`}
           meta={[{ name: 'description', content: post.excerpt }]}
         />
-        <PageHeader title={title} />
 
         <div
           className="content-wrap"
