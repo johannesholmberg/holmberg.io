@@ -9,7 +9,7 @@ const Header = () => (
         <span>holmberg</span>
       </h1>
       <p className="header-global__description">
-        frontend developer, ux designer, minimalist
+        UI developer & designer
       </p>
     </div>
 

@@ -36,10 +36,10 @@ I got inspired by [Wes Bos](http://wesbos.com/) to put together my own page with
 * I’m using [Alfred](https://www.alfredapp.com/) to navigate my file system.
 * Whenever I need a classic FTP client (which actually isn’t that often anymore) I use [Transmit](https://www.panic.com/transmit/) which is my favorite.
 * [TextExpander](https://textexpander.com/) is great for those snippets you type over and over again.
-* I use [Ulysses](https://ulyssesapp.com/) for all my writing and [Day One](http://dayoneapp.com/) for my journaling.
+* I am using [Ulysses](https://ulyssesapp.com/) for all my writing and [Day One](http://dayoneapp.com/) for my journaling.
 * [Things 3](https://culturedcode.com/things/) is my task manager and I’m following a [GTD mindset](https://gettingthingsdone.com/).
-* [Magnet](http://magnet.crowdcafe.com/) is my window manager.
-* [BarTender](https://www.macbartender.com/) keeps things nice and tidy in the menu bar.
+* I’ve come to love [Magnet](http://magnet.crowdcafe.com/) as my window manager.
+* [Bartender](https://www.macbartender.com/) keeps things nice and tidy in the menu bar.
 * I’m using [CloudApp](https://www.getcloudapp.com/) to annotate and share screenshots.
 * [1Password](https://1password.com/) keeps all my password and important assets protected but easily accessible.
 
