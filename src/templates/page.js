@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import PageHeader from '../components/page-header'
 
-export default class PagePage extends Component {
+export default class StandardPage extends Component {
   static get propTypes() {
     return {
       data: PropTypes.any,
