@@ -6,6 +6,7 @@ import Typekit from 'react-typekit'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Icons from '../components/icons'
+import picture from '../assets/images/johannes.jpg'
 
 import '../assets/styles/style.scss'
 import '../assets/styles/code.scss'
@@ -13,7 +14,16 @@ import '../assets/styles/code.scss'
 const TemplateWrapper = ({ children, data }) => (
   <div className="page">
     <Typekit kitId="fyg1ntw" />
-    <Helmet title={`Home – ${data.site.siteMetadata.title}`} />
+    <Helmet
+      title={`Home – ${data.site.siteMetadata.title}`}
+      description={data.site.siteMetadata.description}
+      meta={[
+        {
+          property: 'og:image',
+          content: picture,
+        },
+      ]}
+    />
 
     <div className="a11y">
       <div

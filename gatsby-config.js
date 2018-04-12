@@ -2,7 +2,7 @@
 module.exports = {
   siteMetadata: {
     title: `Johannes Holmberg`,
-    description: `Johannes Holmberg is a frontend designer in Basel, Switzerland.`,
+    description: `Johannes Holmberg is a UI developer and designer living in Basel, Switzerland.`,
     siteUrl: `https://holmberg.io`,
     author: `Johannes Holmberg`,
   },
