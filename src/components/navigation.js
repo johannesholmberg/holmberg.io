@@ -22,7 +22,7 @@ const Navigation = () => {
             className="nav-global__link"
             activeClassName="nav-global__link--active"
           >
-            home
+            Home
           </NavLink>
         </li>
 
@@ -33,7 +33,7 @@ const Navigation = () => {
             className="nav-global__link"
             activeClassName="nav-global__link--active"
           >
-            about
+            About
           </NavLink>
         </li>
 
@@ -44,7 +44,7 @@ const Navigation = () => {
             isActive={checkPost}
             activeClassName="nav-global__link--active"
           >
-            notebook
+            Notebook
           </NavLink>
         </li>
 
@@ -54,7 +54,7 @@ const Navigation = () => {
             className="nav-global__link "
             activeClassName="nav-global__link--active"
           >
-            work
+            Work
           </NavLink>
         </li>
 
@@ -64,7 +64,7 @@ const Navigation = () => {
             className="nav-global__link "
             activeClassName="nav-global__link--active"
           >
-            contact
+            Contact
           </NavLink>
         </li>
       </ul>

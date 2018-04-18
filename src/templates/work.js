@@ -39,9 +39,7 @@ export default class WorkPage extends Component {
         />
 
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <CaseItem post={node} />
-          </div>
+          <CaseItem post={node} key={node.id} />
         ))}
       </section>
     )
