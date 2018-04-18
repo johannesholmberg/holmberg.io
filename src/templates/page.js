@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import PageHeader from '../components/page-header'
+
 export default class StandardPage extends Component {
   static get propTypes() {
     return {
@@ -19,6 +21,8 @@ export default class StandardPage extends Component {
           title={`${title} – ${data.site.siteMetadata.title}`}
           meta={[{ name: 'description', content: post.excerpt }]}
         />
+
+        <PageHeader title={title} />
 
         <div
           className="content-wrap"

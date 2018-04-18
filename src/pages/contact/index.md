@@ -3,8 +3,6 @@ layout: page
 title: "Contact"
 ---
 
-# Contact
-
 You can either connect with me on any of the following networks.
 
 * [LinkedIn](https://www.linkedin.com/in/johannesholmberg)

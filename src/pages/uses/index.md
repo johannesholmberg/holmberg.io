@@ -3,8 +3,6 @@ layout: page
 title: "Uses"
 ---
 
-# Uses
-
 I got inspired by [Wes Bos](http://wesbos.com/) to put together my own page with the tools that I use on an (almost) everyday basis. Things are changing pretty quick in our industry so expect this page to change up fairly often as well.
 
 ## Editor

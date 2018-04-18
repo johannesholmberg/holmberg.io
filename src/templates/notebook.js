@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+
 import ArticleItem from '../components/article-item'
+import PageHeader from '../components/page-header'
 
 export default class NotebookPage extends Component {
   static get propTypes() {
@@ -13,6 +15,7 @@ export default class NotebookPage extends Component {
   render() {
     const { data } = this.props
     const { markdownRemark: post } = data
+    const { title } = post.frontmatter
 
     return (
       <section>
@@ -26,6 +29,8 @@ export default class NotebookPage extends Component {
             },
           ]}
         />
+
+        <PageHeader title={title} />
 
         <div
           className="content-wrap"

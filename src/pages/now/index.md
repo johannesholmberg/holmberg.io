@@ -3,8 +3,6 @@ layout: page
 title: "Now"
 ---
 
-# Now
-
 _This page is a [now page](http://nownownow.com/about) inspired by [Derek Sivers](https://sivers.org/now), check out what it’s about at [nownownow.com](http://nownownow.com/about)._
 
 ## Where I am?

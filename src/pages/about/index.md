@@ -3,8 +3,6 @@ layout: page
 title: "About"
 ---
 
-# About
-
 <figure>
 
 ![Johannes](johannes.jpg)
