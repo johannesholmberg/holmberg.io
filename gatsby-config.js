@@ -123,8 +123,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1000,
+              maxWidth: 960,
               sizeByPixelDensity: true,
+              linkImagesToOriginal: true,
+              showCaptions: false,
             },
           },
           `gatsby-remark-autolink-headers`,

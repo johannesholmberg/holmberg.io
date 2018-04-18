@@ -1,3 +1,7 @@
 /*
- * Override styles from third party libraris
+ * Override styles from third party libraries
  */
+
+.gatsby-resp-image-image {
+  box-shadow: none !important;
+}
