@@ -8,8 +8,7 @@ import Footer from '../components/footer'
 import Icons from '../components/icons'
 import picture from '../assets/images/johannes.jpg'
 
-import '../assets/styles/style.scss'
-import '../assets/styles/code.scss'
+import '../assets/styles/styles.scss'
 
 const TemplateWrapper = ({ children, data }) => (
   <div className="page">
