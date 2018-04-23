@@ -3,8 +3,9 @@
  */
 
 // Fonts
-$fontBody: 'canada-type-gibson', sans-serif;
-$fontAlt: 'Meta Serif Pro', sans-serif, serif;
+$fontBody: 'canada-type-gibson', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 // Colors
 $text: #1d1d1b;
