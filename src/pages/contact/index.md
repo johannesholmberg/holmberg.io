@@ -10,6 +10,5 @@ You can either connect with me on any of the following networks.
 * [Github](https://github.com/johannesholmberg)
 * [Codepen](https://codepen.io/johannesholmberg)
 * [Instagram](https://www.instagram.com/johannesholmberg/)
-* [Flickr](https://www.flickr.com/photos/138261815@N06/)
 
 Or you can get in touch directly by email at [johannes@holmberg.io](mailto:johannes@holmberg.io)
