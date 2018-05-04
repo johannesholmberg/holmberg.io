@@ -60,6 +60,16 @@ const Navigation = () => {
 
         <li className="nav-global__item">
           <NavLink
+            to="/projects"
+            className="nav-global__link "
+            activeClassName="nav-global__link--active"
+          >
+            Projects
+          </NavLink>
+        </li>
+
+        <li className="nav-global__item">
+          <NavLink
             to="/contact"
             className="nav-global__link "
             activeClassName="nav-global__link--active"
