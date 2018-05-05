@@ -18,7 +18,8 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     if (
       layout === 'page' ||
       layout === 'notebook' ||
-      layout === 'work'
+      layout === 'work' ||
+      layout === 'projects'
     ) {
       basePath = 'pages'
     }
@@ -79,8 +80,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         if (layout === 'post') {
           templatePath = `${baseTemplatePath}/post.js`
-        } else if (layout === 'index') {
-          templatePath = `./src/pages/index.js`
         } else if (layout === 'page') {
           templatePath = `${baseTemplatePath}/page.js`
         } else if (layout === 'notebook') {
@@ -89,15 +88,19 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           templatePath = `${baseTemplatePath}/work.js`
         } else if (layout === 'case') {
           templatePath = `${baseTemplatePath}/case.js`
+        } else if (layout === 'projects') {
+          templatePath = `${baseTemplatePath}/projects.js`
         }
 
-        createPage({
-          path: node.fields.slug,
-          component: path.resolve(templatePath),
-          context: {
-            slug: node.fields.slug,
-          },
-        })
+        if (layout !== 'project') {
+          createPage({
+            path: node.fields.slug,
+            component: path.resolve(templatePath),
+            context: {
+              slug: node.fields.slug,
+            },
+          })
+        }
       })
       resolve()
     })
