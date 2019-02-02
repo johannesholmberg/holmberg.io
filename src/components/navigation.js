@@ -38,14 +38,14 @@ const Navigation = () => {
         </li>
 
         <li className="nav-global__item">
-          <NavLink
-            to="/notebook"
+          <a
+            href="https://johanneswrites.com"
             className="nav-global__link"
             isActive={checkPost}
             activeClassName="nav-global__link--active"
           >
-            Notebook
-          </NavLink>
+            Blog
+          </a>
         </li>
 
         <li className="nav-global__item">
