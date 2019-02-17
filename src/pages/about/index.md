@@ -1,11 +1,10 @@
 ---
-layout: page
-title: "About"
+title: 'About'
 ---
 
 <figure>
 
-![Johannes](johannes.jpg)
+![Johannes](./johannes.jpg)
 
 </figure>
 
@@ -31,10 +30,10 @@ I’m also a passionate bookworm and learn so much from reading a tiny bit every
 
 This website was made in the purpose of creating a digital home to collect the writing and the work I do. The last couple of years I have downsized on my social media appearance and wanted to have a simple home where I can experiment at my own pace.
 
-* The website is powered by [Gatsby](https://www.gatsbyjs.org/)
-* It is currently hosted at [Netlify](netlify.com)
-* Hand coded with HTML and CSS
-* No frameworks were used in the creation of this site
-* Profile photo taken by [Erik Carlsson](http://erikcarlsson.se/)
+- The website is powered by [Gatsby](https://www.gatsbyjs.org/)
+- It is currently hosted at [Netlify](netlify.com)
+- Hand coded with HTML and CSS
+- No frameworks were used in the creation of this site
+- Profile photo taken by [Erik Carlsson](http://erikcarlsson.se/)
 
 I see this website as my playground so I don’t always worry how it looks across various browsers. But I’m keen about accessibility and usability issues so if you find something I might have missed, please let me know.
